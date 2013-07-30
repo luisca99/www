@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Guia</title>
+        
+        <link href="../jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="../estilo.css">
+        
+        <script src="../jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+        <script src="../jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+        <script src="../index.js"></script>
+    
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no, maximum-scale=1.0"/>
+    </head> 
+    <body onLoad="esp()">
+    <script language="Javascript">
+    document.oncontextmenu = function(){return false}
+    </script>
+    <div data-role="page" id="inicio">
+       <div data-role="header" data-theme="none"></div>
+
+        <div data-role="content" id="colornegro">
+
+            <div id="publicidad_1">
+            <!--<div id="primera"></div>
+                <div id="segunda"></div> 
+                <div id="tercera"></div> 
+          		<div id="derecha"></div> 
+                <div id="izquierda"></div> -->
+                <div id="centro" align="center">
+                	<img src="../images/construccion/construccion.gif" width=500px height=300px onClick="location='espaniol.html'"/>
+                </div>             
+            </div>  
+        </div>
+        <div data-role="footer" id="barrabaja">
+			<div id="bajo1" align="center">
+                <div id="recomendado">
+                    <a href="#" data-transition="slidedown"><img src="../Botones/recomendado.png" width=200px height=60px/></a> 
+                </div>
+                <div id="banderas">
+                    <img src="../Banderas/es.png" width=30px height=30px/ id="espaniola"></a>
+                    <img src="../Banderas/uk.png" width=30px height=30px/ id="inglesa"></a>
+                    <img src="../Banderas/fr.png" width=30px height=30px/ id="francesa"></a> 
+                    <img src="../Banderas/de.png" width=30px height=30px/ id="alemana"></a> 
+                </div> 
+            </div>
+            <div id="Boton_fondo" align="center">
+                <div id="quevisitar">
+                    <a href="#quevisitar_es" data-transition="slide"><img src="../Botones/visita.png"  width=135px height=100px/></a>
+                </div> 
+                <div id="dondecomer">
+                    <a href="#dondecomer_e"><img src="../Botones/comida.png"  width=135px height=100px/></a>
+                </div> 
+                <div id="ocio">
+                    <a href="#ocio_e"><img src="../Botones/ocio.png"  width=135px height=100px/></a>
+                </div> 
+                <div id="transporte">
+                    <a href="#transporte_e"><img src="../Botones/transporte.png"  width=135px height=100px/></a>
+                </div>
+                <div id="volverhotel">
+                    <a href="#volveralhotel" data-rel="dialog" data-theme="a"><img src="../Botones/volverhotel.png"  width=130px height=80px/></a>
+                </div>
+                <div id="sos">
+                    <a href="#sos1" data-transition="slidedown"><img src="../Botones/sos.gif"  width=80px height=80px/></a>
+                </div>
+            </div>        
+        </div>
+    </div>
+    
+    
+    <!-- ------------------------------------------------- 
+    MENU ESPAÑOL !!!
+    ------------------------------------------------- -->   
+    
+    <div data-role="page" id="quevisitar_fr">
+        <div data-role="header" align="center">
+            <div>
+                <div><h2>Qué Visitar</h2></div>
+            </div>
+        </div>
+       
+        <div data-role="content" id="largo">
+            <ul data-role="listview">
+                <li><a href="#museos">Museos</a></li>
+                <li><a href="#gastronomia">Gastronomía</a></li>
+                <li><a href="#festejos">Festejos</a></li>
+                <li><a href="#monumentos">Monumentos</a></li>
+                <li><a href="#eventosanu">Eventos Anuales</a></li>
+                <li><a href="#otros">Otros</a></li>
+            </ul>
+        </div>
+    
+        <div data-role="footer" align="center">
+            <a href="frances.html"><input type="button" data-role="button" data-inline="true"  value="Atras" data-theme="d"/></a> 
+        </div>      
+    </div>
+    <!-- ------------------------------------------------- -->
+    <!-- ------------------------------------------------- -->  
+    <div data-role="page" id="dondecomer_fr">
+        <div data-role="header" align="center">
+            <div>
+                <div><h2>Donde Comer</h2></div>
+            </div>
+        </div>
+    
+        <div data-role="content" id="largo">
+            <ul data-role="listview">
+                <li><a href="#Restaurante A">Restaurante A</a></li>
+                <li><a href="#Restaurante A">Restaurante A</a></li>
+                <li><a href="#Restaurante A">Restaurante A</a></li>
+                <li><a href="#Restaurante A">Restaurante A</a></li>
+                <li><a href="#Restaurante A">Restaurante A</a></li>
+            </ul>
+        </div>
+    
+        <div data-role="footer" align="center">
+            <a href="frances.html"><input type="button" data-role="button" data-inline="true"  value="Atras" data-theme="d"/></a> 
+        </div>      
+    </div>
+    <!-- ------------------------------------------------- -->
+    <!-- ------------------------------------------------- -->  
+    <div data-role="page" id="ocio_fr">
+        <div data-role="header" align="center">
+            <div>
+                <div><h2>Ocio</h2></div>
+            </div>
+        </div>
+        
+        <div data-role="content" id="largo">
+            <ul data-role="listview">
+                <li><a href="#zonasocio">Zonas de Ocio</a></li>
+                <li><a href="#discotecas">Discotecas</a></li>
+                <li><a href="#populares">Populares</a></li>
+            </ul>
+        </div>
+       
+        <div data-role="footer" align="center">
+            <a href="frances.html"><input type="button" data-role="button" data-inline="true"  value="Atras" data-theme="d"/></a> 
+        </div>      
+    </div>
+    <!-- ------------------------------------------------- -->
+    <!-- ------------------------------------------------- -->  
+    <div data-role="page" id="transporte_fr">
+        <div data-role="header" align="center">
+            <div>
+                <div><h2>Transporte</h2></div>
+            </div>
+        </div>
+        
+        <div data-role="content" id="largo">
+            <ul data-role="listview">
+                <li><a href="com.sygic.aura://coordinate|-3.865003|40.32135|walk">Casa de javi</a></li>
+                <li><a href="com.sygic.aura://coordinate|-3.78058|40.35872|walk">casa de Miki</a></li>
+                <li><a href="com.sygic.aura://coordinate|-3.8757916|40.4935329|walk">Las Rozas</a></li>
+                <li><a href="com.sygic.aura://coordinate|-3.7037902|40.4167754|walk">Madrid</a></li>
+                <li><a href="com.sygic.aura://coordinate|-3.640092|40.54454|walk">Alcobendas</a></li>
+            </ul>
+        </div>
+          
+        <div data-role="footer" align="center">
+            <a href="frances.html"><input type="button" data-role="button" data-inline="true"  value="Atras" data-theme="d"/></a> 
+        </div>      
+    </div>
+
+    </body>
+
+</html>

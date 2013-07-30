@@ -1,0 +1,1824 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Guia</title>
+        
+        <link href="../jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="../estilo.css">
+        
+        <script src="../jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+        <script src="../jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+        <script src="../index.js"></script>
+    
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no, maximum-scale=1.0"/>
+    </head> 
+    <body onLoad="esp()"> 
+    <script language="Javascript">
+	document.oncontextmenu = function(){return false}
+	</script>
+    <!-- Empieza PAGINA PRINCIPAL ES -->
+    <div data-role="page" id="inicio">
+       <div data-role="header" data-theme="none"></div>
+		
+        <div data-role="content" id="colornegro">
+            <div id="publicidad_1">   <!-- PARTE SUPERIOR PUBLICIDAD -->
+                <div id="primera" align="center">
+                    <a href="#urban" data-transition="slidedown"><img src="../Publi/Urbanpubli.gif"/></a> 
+                </div>
+                <div id="segunda"align="center">
+                    <a href="#vaca" data-transition="slidedown"><img src="../Publi/lavaca.gif"/></a> 
+                </div> 
+                <div id="tercera" align="center">
+                    <a href="#hertz" data-transition="slidedown"><img src="../Publi/hertz.gif"/></a> 
+                </div> 
+    <!--        <div id="derecha"></div> 			<!-- PUBLICIDAD  2x DERECHA-->
+    <!--        <div id="izquierda"></div>			<!-- PUBLICIDAD  2x IZQUIERDA-->
+    <!--        <div id="centro"></div>             <!-- PUBLICIDAD  3x CENTRO-->   
+            </div>  <!-- FIN PARTE SUPERIOR PUBLICIDAD -->
+        </div> 
+        
+        <div data-role="footer" id="barrabaja">
+		       	<div id="eltiempomini">
+<!--            		
+                    <a href="#eltiempo" data-rel="dialog">
+                    <img src="../images/Eltiempo/transparente.png" id="trnsp"/>
+                    <div id="c_19f25b90d0db282fc42ff3ff24c2c792" class="mini"></div><script type="text/javascript" src="http://www.eltiempo.es/widget/widget_loader/19f25b90d0db282fc42ff3ff24c2c792"></script>
+                    </a>--> 
+                </div> 
+           <div id="bajo1" align="center">
+                <div id="recomendado" >
+                    <a href="#recomendados" data-transition="slidedown"><img src="../Botones/recomendado.png" width=200px height=60px/></a> 
+                </div>
+                <div id="banderas">
+                    <img src="../Banderas/es.png" width=30px height=30px/ id="espaniola"></a>
+                    <img src="../Banderas/uk.png" width=30px height=30px/ id="inglesa"></a> <!--id="inglesa"-->
+                    <img src="../Banderas/fr.png" width=30px height=30px/ id="francesa"></a> <!--id="francesa"-->
+                    <img src="../Banderas/de.png" width=30px height=30px/ id="alemana"></a> <!--id="alemana"-->
+                </div> 
+            </div>
+            <div id="Boton_fondo" align="center">
+                <div id="quevisitar">
+                    <a href="#quevisitar_es" data-transition="slide"><img src="../Botones/visita.png"  width=135px height=100px/></a>
+                </div> 
+                <div id="dondecomer">
+                    <a href="#dondecomer_es"><img src="../Botones/comida.png"  width=135px height=100px/></a>
+                </div> 
+                <div id="ocio">
+                    <a href="#ocio_es"><img src="../Botones/ocio.png"  width=135px height=100px/></a>
+                </div> 
+                <div id="transporte">
+                    <a href="#transporte_es"><img src="../Botones/transporte.png"  width=135px height=100px/></a>
+                </div>
+                <div id="volverhotel">
+                    <a href="#volveralhotel" data-rel="dialog" data-theme="a"><img src="../Botones/volverhotel.png"  width=130px height=80px/></a>
+                </div>
+                <div id="sos">
+                    <a href="#sos1" data-transition="slidedown"><img src="../Botones/sos.gif"  width=80px height=80px/></a>
+                </div>
+            </div>          
+        </div>
+    </div>
+    <!-- FIN PAGINA PRINCIPAL ES -->
+    
+    <!-- ------------------------------------- MENU ESPAÑOL !!! ------------------------------------- -->
+    
+    <!-- Empieza EL TIEMPO 
+    <div data-role="page" id="eltiempo">
+        <div data-role="header" align="center">
+            <div>
+                <div><h2>El Tiempo:</h2></div>
+            </div>
+        </div>
+        
+        
+
+        <div data-role="content">
+           
+        </div>
+
+        <div data-theme="a" data-role="footer" data-position="fixed">
+
+        </div>
+    </div> 
+    FIN EL TIEMPO -->
+     <!-- Empieza SOS-->
+        <div data-role="page" id="sos1">
+        <div data-role="header" align="center">
+        	<div>
+                <div><h2>Teléfonos de emergencia:</h2></div>
+            </div>
+        </div>
+       
+        <div data-role="content" data-theme="d" id="largo">
+        	<div id="largo6">
+                        <ul data-role="listview" data-filter="true" data-filter-placeholder=" Introduce tu busqueda" data-inset="true">
+                            <li data-role="list-divider"><p align="center" id="teltitulo">Emergencia</p></li>
+                            <li><div id="telcol1"><p>Teléfono Ambulancias Madrid:</p></div><div id="telcol2"><p>061 / 91 479 93 61</p></div></li>
+                            <li><div id="telcol1"><p>Teléfono Emergencias Madrid:</p></div><div id="telcol2"><p>112</p></div></li>
+                            <li><div id="telcol1"><p>Teléfono Policia Nacional Madrid:</p></div><div id="telcol2"><p>091</p></div></li>
+                            <li><div id="telcol1"><p>Teléfono Policia Local Madrid:</p></div><div id="telcol2"><p>092</p></div></li>
+                            <li><div id="telcol1"><p>Teléfono Guardia Civil Madrid:</p></div><div id="telcol2"><p>062 - 91 514 60 00</p></div></li>
+                            <li><div id="telcol1"><p>Teléfono Protección Civil Madrid:</p></div><div id="telcol2"><p>91 537 31 00</p></div></li>
+                            <li><div id="telcol1"><p>Teléfono Seguridad Social y Urgencias SAMUR:</p></div><div id="telcol2"><p>061</p></div></li>
+                            <li><div id="telcol1"><p>Teléfono Bomberos Madrid:</p></div><div id="telcol2"><p>080 - 085 - 092</p></div></li>
+                            <li><div id="telcol1"><p>Teléfono Ayuda en Carretera:</p></div><div id="telcol2"><p>91 742 12 13</p></div></li>
+                            <li data-role="list-divider"><p align="center" id="teltitulo">Hospitales</p></li>
+                            <li>
+                                <div id="telcol3"><h3>Hospital General Universitario Gregorio Marañon</h3><p><b>Telélefono:</b>  91 586 80 00 - <b>Dirección:</b> C/ Dr. Esquerdo, 46
+28007 Madrid</p></div>
+                                <div id="telcol4"><a href="com.sygic.aura://coordinate|-3.6700181|40.4097037|drive"><button>IR</button></a></div>
+                            </li>
+                            <li>
+                                <div id="telcol3"><h3>Hospital Carlos III</h3><p><b>Telélefono:</b>  91 453 25 00 - <b>Dirección:</b> Calle Sinesio Delgado, 10  28029 Madrid</p></div>
+                                <div id="telcol4"><a href="com.sygic.aura://coordinate|-3.7085599|40.472041|drive"><button>IR</button></a></div>
+                            </li>
+                            <li>
+                                <div id="telcol3"><h3>Hospital Universitario 12 de Octubre</h3><p><b>Telélefono:</b>  91 390 80 00 - <b>Dirección:</b> Avda. de Córdoba, S/N
+28041 Madrid</p></div>
+                                <div id="telcol4"><a href="com.sygic.aura://coordinate|-3.6961343|40.3780585|drive"><button>IR</button></a></div>
+                            </li>
+                            <li>
+                                <div id="telcol3"><h3>Hospital Infantil Universitario Niño Jesús</h3><p><b>Telélefono:</b>  91 503 59 00 - <b>Dirección:</b> Avda. Menéndez Pelayo, 65
+28009 Madrid</p></div>
+                                <div id="telcol4"><a href="com.sygic.aura://coordinate|-3.6772817|40.4146587|drive"><button>IR</button></a></div>
+                            </li>
+                            
+                            <li data-role="list-divider"><p align="center" id="teltitulo">Policia</p></li>
+                            <li>
+                                <div id="telcol3"><h3>Comisaría de Distrito Madrid Centro</h3><p><b>Telélefono:</b>  91 548 79 85 - <b>Dirección:</b> C/ Leganitos, 19 - 28004 - Madrid</p></div>
+                                <div id="telcol4"><a href="com.sygic.aura://coordinate|-3.7101687|40.4215847|drive"><button>IR</button></a></div>
+                            </li>
+                            <li>
+                                <div id="telcol3"><h3>Comisaría de Distrito Madrid Chamartín</h3><p><b>Telélefono:</b>  91 322 79 10 - <b>Dirección:</b> Avda. PÍo XII, 48	28016 - Madrid</p></div>
+                                <div id="telcol4"><a href="com.sygic.aura://coordinate|-3.6732313|40.4689727|drive"><button>IR</button></a></div>
+                            </li>
+                            <li>
+                                <div id="telcol3"><h3>Comisaría de Distrito Madrid Fuencarral / El Pardo</h3><p><b>Telélefono:</b>  91 378 24 60 - <b>Dirección:</b> C/ Mirador de la Reina, 4 28035 - Madrid</p></div>
+                                <div id="telcol4"><a href="com.sygic.aura://coordinate|-3.7270065|40.4876331|drive"><button>IR</button></a></div>
+                            </li>
+                            <li>
+                                <div id="telcol3"><h3>Comisaría de Distrito Madrid Retiro</h3><p><b>Telélefono:</b>  91 322 10 27 - <b>Dirección:</b> C/ Huertas, 76-78 28014 - Madrid</p></div>
+                                <div id="telcol4"><a href="com.sygic.aura://coordinate|-3.6949976|40.4128885|drive"><button>IR</button></a></div>
+                            </li>
+                        </ul>
+                     </div>
+        </div>
+    
+        <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home" data-transition="slideup">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+          </div> 	  	
+    </div>    
+     <!-- FIN SOS-->
+    
+    <!-- ----------------------------------------------- -->
+     <!-- Empieza HOTEL URBAN-->
+    <div data-role="page" id="urban">
+        <div data-role="header" align="center">
+        </div>
+       
+        <div data-role="content" id="largo4" data-theme="b">
+        	<a href="#volveralhotel" data-rel="dialog"><div id="botonhotel"></div></a>
+            <img src="../images/urban/urban.gif" width="100%" height="478"/>
+        </div>
+    
+        <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home" data-transition="slideup">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+          </div> 	  	
+    </div>
+    <!-- FIN HOTEL URBAN -->	
+    <!-- Empieza VOLVER AL HOTEL -->
+    <div data-role="page" id="volveralhotel">
+        <div data-role="header" align="center">
+            <div>
+                <div><h2>Como quieres ir al hotel:</h2></div>
+            </div>
+        </div>
+       
+        <div data-role="content">
+        	<div class="ui-grid-a" align="center">
+            	<div class="ui-block-a">
+           			<a href="com.sygic.aura://coordinate|-3.6987818|40.416539|walk"><img src="../images/css/pie.png"  width=100px height=110px/></a>
+                </div>
+                <div class="ui-block-b">    
+           			<a href="com.sygic.aura://coordinate|-3.6987818|40.416539|drive"><img src="../images/css/coche.png"  width=100px height=110px/></a>
+                </div>
+           	</div>
+        </div>
+    
+        <div data-role="footer" align="center">
+           
+        </div>   	
+    </div>
+    <!-- FIN VOLVER AL HOTEL -->
+    
+    <!-- ----------------------------------------------- -->
+    
+    <!-- Empieza RECOMENDADOS -->	 
+    <div data-role="page" id="recomendados">
+        <div data-role="header" align="center">
+            <div>
+                <div><h2>Recomendados</h2></div>
+            </div>
+        </div>
+        
+        <div data-role="content" id="largo" >
+            <div class="ui-grid-b">
+            	<div class ="ui-block-a">
+                	<div data-role="content">
+                        <div id="largo_recomendado" data-role="controlgroup" data-type="vertical" >
+                            <a href=""><input type="button" data-role="button"   value="Restaurante:" data-theme="a"/></a> 
+                            <div id="largox">
+                            <a href="#vaca"><input type="button" data-role="button"   value="La Vaca Argentina" data-theme="b"/></a> 
+                            <a href="#"><input type="button" data-role="button"   value="LaGoa" data-theme="b"/></a> 
+                            <a href="#"><input type="button" data-role="button"   value="Rodilla" data-theme="b"/></a> 
+                            <a href="#"><input type="button" data-role="button"   value="Mesón 5 Jotas" data-theme="b"/></a> 
+                            <a href="#"><input type="button" data-role="button"   value="Vips" data-theme="b"/></a>	
+                            <a href="#"><input type="button" data-role="button"   value="Pizza  Marzanno" data-theme="b"/></a> 
+                            <a href="#"><input type="button" data-role="button"   value="Starbucks Coffee" data-theme="b"/></a> 
+                            <a href="#"><input type="button" data-role="button"   value="Viena Capellanes" data-theme="b"/></a>
+                            <a href="#"><input type="button" data-role="button"   value="Juan Valdez" data-theme="b"/></a>
+                            </div>	
+                        </div>
+                     </div>
+				</div>
+                <div class ="ui-block-b">
+                	<div data-role="content">
+                        <div id="largo_recomendado" data-role="controlgroup" data-type="vertical">
+                            <a href=""><input type="button" data-role="button"   value="Ocio:" data-theme="a"/></a> 
+                            <div id="largox">
+                            <a href="#joyeslava"><input type="button" data-role="button"   value="Joy Eslava" data-theme="b"/></a> 
+                            <a href="#bolera"><input type="button" data-role="button"   value="Bolera Chanmartin" data-theme="b"/></a> 
+                            <a href="#"><input type="button" data-role="button"   value="Parque Warner Madrid" data-theme="b"/></a> 
+                            <a href="#"><input type="button" data-role="button"   value="Parque Aquópolis" data-theme="b"/></a> 
+                            <a href="#"><input type="button" data-role="button"   value="Parque de Atracciones de Madrid" data-theme="b"/></a>
+                            <a href="#"><input type="button" data-role="button"   value="New Garamond Discoteca" data-theme="b"/></a>
+                            <a href="#"><input type="button" data-role="button"   value="Kinépolis Madrid" data-theme="b"/></a> 
+                            <a href="#"><input type="button" data-role="button"   value="Teatro Real" data-theme="b"/></a> 
+                            <a href="#"><input type="button" data-role="button"   value="Casino de Madrid" data-theme="b"/></a>
+                            <a href="#"><input type="button" data-role="button"   value="Shoko Madrid Discoteca" data-theme="b"/></a>
+                           </div> 		
+                        </div>
+                     </div>
+                </div>
+               
+                <div class ="ui-block-c">
+                	<div data-role="content">
+                        <div id="largo_recomendado" data-role="controlgroup" data-type="vertical">
+                            <a href=""><input type="button" data-role="button"   value="Shopping:" data-theme="a"/></a> 
+                            <div id="largox">
+                            <a href="#"><input type="button" data-role="button"   value="Cortefiel" data-theme="b"/></a> 
+                            <a href="#"><input type="button" data-role="button"   value="Zara" data-theme="b"/></a> 
+                            <a href="#"><input type="button" data-role="button"   value="Adolfo Domínguez" data-theme="b"/></a>
+                            <a href="#"><input type="button" data-role="button"   value="Loewe" data-theme="b"/></a>
+                            <a href="#"><input type="button" data-role="button"   value="Javier Simorra" data-theme="b"/></a> 
+                            <a href="#"><input type="button" data-role="button"   value="Punt Roma" data-theme="b"/></a> 
+                            <a href="#"><input type="button" data-role="button"   value="Women'Secret" data-theme="b"/></a>
+                            <a href="#"><input type="button" data-role="button"   value="Armani Collezioni" data-theme="b"/></a>
+                            </div>			
+                        </div>
+                     </div>
+                </div>
+                
+            </div>
+        </div>
+          
+        <div data-role="footer" align="center" data-theme="a">
+        	<nav data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="espaniol.html" data-transition="slideup" data-icon="home">Inicio</a> 
+                    </li>
+                 </ul>
+             </nav>
+        </div>     
+    </div>
+    <!-- Fin RECOMENDADOS -->
+    
+    <!-- ----------------------------------------------- -->
+    
+    <!-- Empieza QUE VISITAR -->
+    <div data-role="page" id="quevisitar_es">
+        <div data-role="header" align="center">
+            <div>
+                <div><h2>Qué Visitar</h2></div>
+            </div>
+        </div>
+       
+        <div data-role="content" id="largo" data-theme="b">
+            <ul data-role="listview">
+                <li><a href="#museos">Museos</a></li>
+                <li><a href="#monumentos">Monumentos</a></li>
+                <li><a href="#eventos">Eventos Anuales</a></li>
+                <li><a href="#otros">Otros</a></li>
+            </ul>
+        </div>
+    
+        <div data-role="footer" align="center" data-theme="a">
+        	<nav data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="espaniol.html" data-transition="fade" data-icon="home">Inicio</a> 
+                    </li>
+                 </ul>
+             </nav>
+        </div>  	
+    </div>
+    <!-- Empieza QUE VISITAR NIVEL 2-->
+        <!-- Empieza MUSEOS -->	 
+        <div data-role="page" id="museos">
+            <div data-role="header" align="center">
+                <div>
+                    <div><h2>Museos</h2></div>
+                </div>
+            </div>
+            
+            <div data-role="content" id="largo" data-theme="b">
+                <ul data-role="listview">
+                    <li><a href="#reinasofia">Museo Reina Sofía</a></li>
+                    <li><a href="#delprado">Museo Del Prado</a></li>
+                </ul>
+            </div>
+              
+            <div data-role="footer" align="center" data-theme="a">
+                <nav data-role="navbar">
+                    <ul>
+                        <li>
+                            <a href="#quevisitar_es" data-icon="back">Atras</a> 
+                        </li>
+                        <li>
+                            <a href="espaniol.html" data-icon="home">Inicio</a> 
+                        </li>
+                     </ul>
+                 </nav>
+            </div>      
+        </div>
+            <!-- Empieza MUSEOS NIVEL 2-->
+                <!-- MUSEOS REINA SOFIA -->  
+                <div data-role="page" id="reinasofia">
+                    <div data-role="header" align="center">
+                        <div>
+                            <div><h2>Museo Reina Sofía</h2></div>
+                        </div>
+                    </div>
+                    
+                    <div data-role="content" id="largo">
+                        <div id="caja">
+                            <div id="caja_texto">
+                                <div id="texto">
+                                    <p><b>El Museo Nacional Centro de Arte Reina Sofía</b> (MNCARS) es un museo español de arte del siglo XX y contemporáneo, con sede en Madrid.En la colección permanente del museo destaca un núcleo de obras de grandes artistas españoles del siglo XX, especialmente Pablo Picasso, Salvador Dalí y Joan Miró, representados ampliamente y con algunas de sus mejores obras. Son muy relevantes también las colecciones de arte surrealista (con obras de Francis Picabia, René Magritte, Yves Tanguy o Jean Arp, además de los ya citados Miró y Dalí), del Cubismo (que a la colección Picasso añade nombres como Juan Gris, Georges Braque, Robert y Sonia Delaunay o Fernand Léger), y la presencia de artistas expresionistas, como Francis Bacon o Antonio Saura.</p>
+                                </div>
+                                <div id="texto_2">
+                                    <p><b> Dirección:</b>  Calle de Santa Isabel, 52, 28012 Madrid</br><b> Teléfono:</b>  917 74 10 00</br></br><b> Como llegar:</b>  EMT Empresa Municipal de Transporte, Estación de tren Atocha-RENFE, Metro:Línea 1 estación Atocha y Línea 3 estación Lavapiés</br></br><b> Posee:</b>  Aparcamiento de bicicletas y Aparcamientos públicos de vehículos.</br></br><b>Horiarios:</b> Apertura 10:00 a 20:00 aprox. Martes: CERRADO!</p>
+                                </div>
+                                <div id="texto_3">
+                                    <p><b> Entrada General:</b>  8€</p>
+                                </div>
+                            </div>
+                            
+                            <div id="foto_museo"></div>
+            
+                            <div id="ir_museo">
+                                <a href="com.sygic.aura://coordinate|-3.6940401|40.4085659|walk"><input type="button" data-role="button" data-inline="true"  value="Ir a Pie" data-theme="d"/></a> 
+                                <a href="com.sygic.aura://coordinate|-3.6940401|40.4085659|drive"><input type="button" data-role="button" data-inline="true"  value="Ir en Coche" data-theme="d"/></a> 
+                            </div>
+                        </div>
+                    </div>
+                      
+                    <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#museos" data-icon="back">Atras</a> 
+                                </li>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+                    </div>     
+                </div>
+                 <!-- FIN MUSEO REINA SOFIA -->	
+             <!-- Fin MUSEOS NIVEL 2-->
+         <!-- Fin MUSEO -->	
+         <!-- Empieza FESTEJOS -->
+         <!-- Fin FESTEJOS -->	
+         
+         
+         <!-- Empieza MONUMENTOS -->
+         <div data-role="page" id="monumentos">
+                <div data-role="header" align="center">
+                    <div>
+                        <div><h2>Monumentos</h2></div>
+                    </div>
+                </div>
+            
+                <div data-role="content" id="largo" data-theme="b">
+                    <ul data-role="listview">
+                        <li><a href="#puertadelsol">Puerta del Sol</a></li>
+                        <li><a href="#plazamayor">Plaza Mayor</a></li>
+                        
+                        <li><a href="#plazadelavilla">Plaza de la Villa</a></li>
+                        <li><a href="#colegiatasanisidro">Colegiata de San Isidro</a></li>
+                        <li><a href="#sanfranciscogrande">San Francisco el Grande</a></li>
+                        <li><a href="#plazadeoriente">Plaza de Oriente</a></li>
+                        <li><a href="#palacioreal">Palacio Real</a></li>
+                        <li><a href="#catedraldelaalmudena">Catedral de la Almudena</a></li>
+                        <li><a href="#plazadeespaña">Plaza de España</a></li>
+                        <li><a href="#templodedebod">Templo de Debod</a></li>
+                        <li><a href="#granvia">Gran Vía</a></li>
+                        <li><a href="#plazadecibeles">Plaza de Cibeles</a></li>
+                        <li><a href="#plazadecolon">Plaza de Colón</a></li>
+                        <li><a href="#puertadealcala">Puerta de Alcalá</a></li>
+                        <li><a href="#palaciodecristal">Palacio de Cristal</a></li>
+                        <li><a href="#fuentedeneptuno">Fuente de Neptuno</a></li>
+                        <li><a href="#estacióndeatocha">Estación de Atocha</a></li>
+                        <li><a href="#plazadetorosventas">Plaza de Toros de las Ventas</a></li>
+                        <li><a href="#puentedetoledo">Puente de Toledo</a></li>
+                        
+                        <li data-theme="d"><p align="center" style=" font-family:Verdana, Geneva, sans-serif; font-size:16px; margin-top:5px; font-weight:700;">Arquitectura Conteporanea ...</p></li>
+                        <li><a href="#puentedearganzuela">Puente de Arganzuela</a></li>
+                        
+                        <li><a href="#torrebbva">Torre BBVA</a></li>
+                        <li><a href="#torrepicasso">Torre Picasso</a></li>
+                        <li><a href="#cuatrotorres">Cuatro Torres Business Area</a></li>
+
+                    </ul>
+                </div>
+                <div data-role="footer" align="center" data-theme="a">
+                    <nav data-role="navbar">
+                        <ul>
+                            <li>
+                                <a href="#quevisitar_es" data-icon="back">Atras</a> 
+                            </li>
+                            <li>
+                                <a href="espaniol.html" data-icon="home">Inicio</a> 
+                            </li>
+                         </ul>
+                     </nav>
+                </div> 	
+            </div>
+            <!-- Empieza MONUMENTOS NIVEL 2 -->
+                <!-- Empieza PLAZA DE CIBELES-->	
+                <div data-role="page" id="plazadecibeles">
+                    <div data-role="header" align="center">
+                        <div>
+                            <div><h2>Fuente de Cibeles</h2></div>
+                        </div>
+                    </div>
+                    
+                    <div data-role="content" id="largo">
+                        <div id="caja">
+                            <div id="caja_texto">
+                                <div id="texto">
+                                        <p><b>La fuente de la diosa Cibeles</b> es uno de los símbolos más emblemáticos de Madrid. Este monumento se encuentra ubicado en la plaza que le da nombre  	 										desde 1782, entre el Paseo de Recoletos y el Paseo del Prado. La fuente se debe a un encargo del rey Carlos III al arquitecto Ventura Rodríguez. Realizada en  	 										mármol, el monumento representa a la diosa Cibeles, símbolo de la Tierra, la agricultura y la fecundidad situada sobre un carro tirado por leones. Su 	 	 		 										ubicación inicial fue junto al Palacio de Buenavista, en el Paseo de Recoletos, para pasar a finales del siglo XIX a su situación actual, en el centro de la    		 										plaza. La Fuente de la Cibeles es visita obligada en Madrid. En esta misma plaza se encuentra el edifico del Banco de España, el Palacio de 	 	   			 										Telecomunicaciones, actual sede del Ayuntamiento de Madrid, el Palacio de Linares y el Palacio de Buenavista.
+    									</p>
+                                </div>
+                                <div id="texto_2">
+                                        <p><b> Dirección:</b>  Plaza de Cibeles, 28014 Madrid</br></br><b> Como llegar:</b></p> Autobuses: 1, 2, 5, 9, 10, 14, 15, 20, 27, 34, 37, 45, 51,</br>
+                                           52, 53, 	 										74, 146, 150, 202
+                                        Metro: Línea 2 (Banco de España)</br>
+                                       Cercanías: Estación de Recoletos. </p>
+                                </div>
+                                <div id="texto_3">
+                                    	<p><b> Entrada General:</b>  Gratis</p>
+                                </div>
+                            </div>
+                            
+                            <div id="foto_cibeles"></div>
+            
+                            <div id="ir_museo">
+                              	<a href="com.sygic.aura://coordinate|-3.693125|40.4192722|walk"><input type="button" data-role="button" data-inline="true"  value="Ir a Pie" data-theme="d"/></a> 
+                                <a href="com.sygic.aura://coordinate|-3.693125|40.4192722|drive"><input type="button" data-role="button" data-inline="true"  value="Ir en Coche" data-theme="d"/></a> 
+                            </div>
+                        </div>
+                    </div>
+                      
+                    <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#monumentos" data-icon="back">Atras</a> 
+                                </li>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+                    </div>     
+                </div>
+                <!-- Fin PLAZA DE CIBELES -->
+                <!-- Empieza PUERTA DEL SOL	-->
+                <div data-role="page" id="puertadelsol">
+                    <div data-role="header" align="center">
+                        <div>
+                            <div><h2>Puerta del Sol</h2></div>
+                        </div>
+                    </div>
+                    
+                    <div data-role="content" id="largo">
+                        <div id="caja">
+                            <div id="caja_texto">
+                                <div id="texto">
+                                    <p><strong>La Puerta del Sol</strong>, se encuentra desde 1950 el denominado Kilómetro Cero de las carreteras radiales españolas. El edificio más antiguo de la Puerta del Sol es la Casa de Correos y en ella destaca el reloj de torre que fue construido y donado en el siglo XIX por José Rodriguez de Losada y cuyas campanadas de las 12 de la noche del 31 de diciembre marcan la tradicional toma de las doce uvas a la gran mayoría de los españoles. Es un lugar de cita, un lugar de paso entre diversas partes de Madrid.</p>
+                                </div>
+                                <div id="texto_2">
+                                    <p><b> Dirección:</b> Puerta del Sol, 28013 Madrid</br>
+                                    </p>
+                                    <p><b>Como llegar:</b> </p>
+                                    <p>Autobuses: 3, 50, 51, N16, N17, L1, L5</p>
+                                    <p> Metro: Líneas 1,2 y 3 (Sol). </p>
+                                    <p>Cercanías: Lineas C3 y C4 (Sol) .</br></br>
+                                    </p>
+                                </div>
+                                <div id="texto_3">
+                                    <p><b> Entrada General:</b> Gratis</p>
+                                </div>
+                            </div>
+                            
+                            <div id="foto_puertadelso"></div>
+            
+                            <div id="ir_museo">
+                              <a href="com.sygic.aura://coordinate|-3.703347|40.416949|walk"><input type="button" data-role="button" data-inline="true"  value="Ir a Pie" data-theme="d"/></a> 
+                                <a href="com.sygic.aura://coordinate|-3.703347|40.416949|drive"><input type="button" data-role="button" data-inline="true"  value="Ir en Coche" data-theme="d"/></a> 
+                            </div>
+                        </div>
+                    </div>
+                      
+                    <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#monumentos" data-icon="back">Atras</a> 
+                                </li>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+                    </div>     
+                </div>
+            	<!-- Fin PUERTA DEL SOL -->
+            	<!-- Empieza PLAZA MAYOR-->	
+                <div data-role="page" id="plazamayor">
+                    <div data-role="header" align="center">
+                        <div>
+                            <div><h2>Plaza Mayor</h2></div>
+                        </div>
+                    </div>
+                   
+                    <div data-role="content" id="largo">
+                        <div id="caja">
+                            <div id="caja_texto">
+                                <div id="texto">
+                                    <p><strong>La Plaza Mayor</strong> es la plaza central de Madrid, los orígenes de la plaza se remontan al siglo XVI, cuando en la confluencia de los caminos (hoy en día las calles de Toledo y Atocha) a las afueras de la villa medieval, se celebraba en este sitio, conocido como &quot;plaza de Arrabal&quot;, el mercado principal de la villa, construyéndose en esta época una primera casa porticada, o lonja, para regular el comercio en la plaza. Construida entre los siglos XV y XVIII. En la misma plaza puede verse El Arco de Cuchilleros.</p>
+                                </div>
+                                <div id="texto_2">
+                                    <p><b>Dirección:</b> Plaza Mayor, 28014 Madrid</br>
+                                    </p>
+                                    <p><b>Como llegar:</b></br>
+                                    </p>
+                                    Autobuses<b>:</b> 3, 50, N16, N17 </br>
+                                    
+                                    Metro: Líneas 1,2 y 3 (Sol).</br>
+                                    
+                                    Cercanías: Lineas C3 y C4 (Sol)</p>
+                              </div>
+                                <div id="texto_3">
+                                    <p><b> Entrada General:</b>  Gratis</p>
+                                </div>
+                            </div>
+                            
+                            <div id="foto_plazamayo"></div>
+            
+                            <div id="ir_museo">
+                              <a href="com.sygic.aura://coordinate|-3.707385|40.415388|walk"><input type="button" data-role="button" data-inline="true"  value="Ir a Pie" data-theme="d"/></a> 
+                                <a href="com.sygic.aura://coordinate|-3.707385|40.415388|drive"><input type="button" data-role="button" data-inline="true"  value="Ir en Coche" data-theme="d"/></a> 
+                            </div>
+                        </div>
+
+                    </div>
+                      
+                    <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#monumentos" data-icon="back">Atras</a> 
+                                </li>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+                    </div>     
+                </div>
+                <!-- Fin PLAZA MAYOR -->
+                <!-- Empieza PLAZA DE LA VILLA-->	
+                <div data-role="page" id="plazadelavilla">
+                    <div data-role="header" align="center">
+                        <div>
+                            <div><h2>Plaza de la Villa</h2></div>
+                        </div>
+                    </div>
+                   
+                    <div data-role="content" id="largo">
+                        <div id="caja">
+                            <div id="caja_texto">
+                                <div id="texto">
+                                    <p><strong>La Plaza de la Villa</strong> está situada en pleno barrio del Madrid de los Austrias,junto a la calle Mayor, que conforma su cara septentrional. En ella tienen su origen tres pequeñas calles, correspondientes al primitivo trazado medieval de la ciudad: la del codo aparece por el este, la del Cordón por el sur y la de Madrid por el Oeste. Alberga los edificios de los siglos XV, XVI y XVII: La casa de la villa, la Torre Lujanes y la Casa de Cisneros.</p>
+                                </div>
+                                <div id="texto_2">
+                                    <p><b>Dirección:</b> Plaza Mayor, 28014 Madrid</p><b> Como llegar:</b></br>
+                                    </p>
+                                    Autobuses: 3, 31, 50, 65 , N16 </br>
+                                    Metro: Líneas 1, 3 y 2 (Sol) y 2 y 5 (Opera).</br>
+                                    Cercanías:Lineas C3 y C4 (Sol).
+                                    </p>
+                              </div>
+                                <div id="texto_3">
+                                    <p><b> Entrada General:</b>  Gratis</p>
+                    </div>
+                    </div>
+                            
+                            <div id="foto_plazadelavilla"></div>
+            
+                            <div id="ir_museo">
+                              <a href="com.sygic.aura://coordinate|-3.710485|40.415249|walk"><input type="button" data-role="button" data-inline="true"  value="Ir a Pie" data-theme="d"/></a> 
+                                <a href="com.sygic.aura://coordinate|-3.710485|40.415249|drive"><input type="button" data-role="button" data-inline="true"  value="Ir en Coche" data-theme="d"/></a> 
+                            </div>
+                        </div>
+ </div>
+                      
+                    <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#monumentos" data-icon="back">Atras</a> 
+                                </li>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+                    </div>     
+                </div>
+                <!-- Fin PLAZA DE LA VILLA -->
+                <!-- Empieza COLEGIATA SAN ISIDRO-->	
+                <div data-role="page" id="colegiatasanisidro">
+                    <div data-role="header" align="center">
+                        <div>
+                            <div><h2>Real Colegiata de San Isidro</h2></div>
+                        </div>
+                    </div>
+                   
+                    <div data-role="content" id="largo">
+                        <div id="caja">
+                            <div id="caja_texto">
+                                <div id="texto">
+                                    <p><strong>La Real Colegiata de san Isidro</strong>, es un templo católico situado en el casco histórico de Madrid. Entre 18856 y 1992, mientras duraron las obras de la Catedral de la Almudena, tuvo categoría de catedral. Fundada como iglesia de la Compañía de Jesús, justo al lado estuvo el Colegio de Nobles. La colegiata fue construida en el siglo XVII como iglesia del antiguo Colegio Imperial de la Compañia de Jesús, que se encuentra anexo al edificio. En ella se custodian los restos mortales de san Isidro, patrón de Madrid y de su esposa, santa María de la Cabeza.</p>
+                                </div>
+                                <div id="texto_2">
+                                    <p><b>Dirección:</b> Toledo, 37 28005 Madrid </p><b>Como llegar:</b></p>
+                                      Autobuses: 6, 17, 18, 23, 26, 31, 32, 35, 50, 65, M1, N17</br> 
+                                      Metro: Linea 1 (Tirso de Molina), Linea 3 (La Latina).</p>
+                                      <strong>Horario:</strong> Todos los días (7:30 a 13:00 y 18:00 a 21:00)</p>
+                              </div>
+                                <div id="texto_3">
+                                    <p><b> Entrada General:</b>  Gratis</p>
+                    </div>
+                    </div>
+                            
+                            <div id="foto_colegiatasanisidro"></div>
+            
+                            <div id="ir_museo">
+                              <a href="com.sygic.aura://coordinate|-3.707084|40.413141|walk"><input type="button" data-role="button" data-inline="true"  value="Ir a Pie" data-theme="d"/></a> 
+                                <a href="com.sygic.aura://coordinate|-3.707084|40.413141|drive"><input type="button" data-role="button" data-inline="true"  value="Ir en Coche" data-theme="d"/></a> 
+                            </div>
+                        </div>
+ </div>
+                      
+                    <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#monumentos" data-icon="back">Atras</a> 
+                                </li>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+                    </div>     
+                </div>
+                <!-- Fin COLEGIATA SAN ISIDRO -->
+                <!-- Empieza SAN FRANCISCO EL GRANDE-->	
+                <div data-role="page" id="sanfranciscogrande">
+                    <div data-role="header" align="center">
+                        <div>
+                            <div><h2>Real Basílica de San Francisco el Grande</h2></div>
+                        </div>
+                    </div>
+                   
+                    <div data-role="content" id="largo">
+                        <div id="caja">
+                            <div id="caja_texto">
+                                <div id="texto">
+                                    <p><strong>La Real Basilica de San Francisco el Grande</strong> es un templo católico , en la zona conocida como Barrio de Palacio, dentro del centro histórico de la capital de España. Preside la cara occidental de la Plaza de San Francisco. Forma parte del convento franciscano de Jesús y María, fundado a principios del siglo XIII, sobre una desaparecida ermita dedicada a santa María. Este templo del siglo XVIII tiene obras de Goya y Bayeu y la tercera cúpula en tamaño de la cristiandad.</p>
+                                </div>
+                                <div id="texto_2">
+                                    <p><b>Dirección:</b></p> Gran Vía de San Francisco, 1 28005 Madrid Teléfono:913653800.
+                                    <p><b>Como llegar:</b></br></br>
+                                      Autobuses: 3, 60, 148, C1, C2, N16 
+                                      Metro: Línea 5 (Puerta de Toledo)</br></br>
+                                    <b>Horarios:</b> De Martes a Sábado (10:30 a 12:30 - 16:00 a 18:00) 
+                              </div>
+                                <div id="texto_3">
+                                    <b> Entrada General:</b> 3 €uros
+                                    <p><strong>Entrada Reducida:</strong> 2 €uros</p>
+                              </div>
+                    </div>
+                            
+                            <div id="foto_sanfranciscogrande"></div>
+            
+                            <div id="ir_museo">
+                              <a href="com.sygic.aura://coordinate|-3.714165|40.410519|walk"><input type="button" data-role="button" data-inline="true"  value="Ir a Pie" data-theme="d"/></a> 
+                                <a href="com.sygic.aura://coordinate|-3.714165|40.410519|drive"><input type="button" data-role="button" data-inline="true"  value="Ir en Coche" data-theme="d"/></a> 
+                            </div>
+                        </div>
+ </div>
+                      
+                    <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#monumentos" data-icon="back">Atras</a> 
+                                </li>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+                    </div>     
+                </div>
+                <!-- Fin SAN FRANCISCO GRANDE -->
+                <!-- Empieza PLAZA DE ORIENTE -->
+                <div data-role="page" id="plazadeoriente">
+                    <div data-role="header" align="center">
+                        <div>
+                            <div><h2>Plaza de Oriente
+                            </h2></div>
+                        </div>
+                    </div>
+                   
+                    <div data-role="content" id="largo">
+                        <div id="caja">
+                            <div id="caja_texto">
+                                <div id="texto">
+                                  <p><strong>En la Plaza de Oriente</strong> se encuentran el Palacio Real y Teatro Real. En el centro se ubica la escultura ecuestre de Felipe IV, realizada por Pietro Tacca e inspirada en un dibujo de Velázquez. Se trata de una plaza rectangular de cabecera curvada, de carácter monumental, cuyo trazado definitivo responde a un diseño de 1844 de Narciso Pascual y Colomer. Uno de sus principales impulsores fue el rey José I, quién ordenó la demolición de las casas medievales situadas sobre su solar.</p>
+                                </div>
+                                <div id="texto_2">
+                                    <p><b>Dirección:</b></p>Plaza de Oriente 28014 Madrid</br><b> 
+                                    </p>Como llegar: </b></p>
+                                        Autobuses: 3, 25, 39, 46, 75, 138, 148, C1, C2, N16, N18, N19, N20 
+                                        </br>Metro: Línea 2 Y 5 (Opera)</br>
+                                        Cercanías:Lineas C3 y C4 (Sol) </br>
+                                    </p>
+                              </div>
+                                <div id="texto_3">
+                                    <p><b> Entrada General:</b>  Gratis</p>
+                    </div>
+                    </div>
+                            
+                            <div id="foto_plazadeoriente"></div>
+            
+                            <div id="ir_museo">
+                              <a href="com.sygic.aura://coordinate|-3.712213|40.418336|walk"><input type="button" data-role="button" data-inline="true"  value="Ir a Pie" data-theme="d"/></a> 
+                                <a href="com.sygic.aura://coordinate|-3.712213|40.418336|drive"><input type="button" data-role="button" data-inline="true"  value="Ir en Coche" data-theme="d"/></a> 
+                            </div>
+                        </div>
+ </div>
+                      
+                    <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#monumentos" data-icon="back">Atras</a> 
+                                </li>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+                    </div>     
+                </div>
+                <!-- Fin PLAZA DE ORIENTE -->
+                <!-- Empieza PALACIO REAL -->
+                <div data-role="page" id="palacioreal">
+                    <div data-role="header" align="center">
+                        <div>
+                            <div><h2>Palacio Real</h2></div>
+                        </div>
+                    </div>
+                   
+                    <div data-role="content" id="largo">
+                        <div id="caja">
+                            <div id="caja_texto">
+                                <div id="texto">
+                                    <p><strong>El Palacio Real</strong> es la residencia oficial del Rey de España, utilizada fundamentalmente para ceremonias de Estado, ya que los actuales Reyes no habitan en él, sino en el Palacio de la Zarzuela. El lugar donde se levantó el Alcázar musulmán y tras ser destruido por un incendio en 1734 hoy lo ocupa el Palacio Real, construido en el siglo XVII por orden del rey Felipe V. Justo en frente se encuentra la Catedral de la Almudena y el Teatro Real.</p>
+                                </div>
+                                <div id="texto_2">
+                                    <p><b>Dirección:</b> Calle Bailén, sn 28001 Madrid Teléfonos: 914548800 / 914548803 (reservas)</p><b>Como llegar:</b></p>
+                                      Autobuses: 3, 25, 39, 46, 75, 138, 148, C1, C2, N16, N18, N19, N20 </br>Metro: Línea 2 Y 5 (Opera)</br>
+                                    Cercanías:Lineas C3 y C4 (Sol)</p>
+                                 </div>
+                                <div id="texto_3">
+                                    <b> Entrada General:</b> 10 €uros</br>
+                                    <strong>Entrada Reducida:</strong> 5 €uros</b></br>
+                                    Entrada gratuita: de lunes a jueves, desde dos horas antes del cierre.
+                              </div>
+                    </div>
+                            
+                            <div id="foto_palacioreal"></div>
+            
+                            <div id="ir_museo">
+                              <a href="com.sygic.aura://coordinate|-3.713522|40.418353|walk"><input type="button" data-role="button" data-inline="true"  value="Ir a Pie" data-theme="d"/></a> 
+                                <a href="com.sygic.aura://coordinate|-3.713522|40.418353|drive"><input type="button" data-role="button" data-inline="true"  value="Ir en Coche" data-theme="d"/></a> 
+                            </div>
+                        </div>
+ </div>
+                      
+                    <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#monumentos" data-icon="back">Atras</a> 
+                                </li>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+                    </div>     
+                </div>
+                <!-- Fin PALACIO REAL -->
+                <!-- Empieza CATEDRAL DE LA AMUDENA -->
+                <div data-role="page" id="catedraldelaalmudena">
+                    <div data-role="header" align="center">
+                        <div>
+                            <div><h2>Catedral de la Almudena</h2></div>
+                        </div>
+                    </div>
+                   
+                    <div data-role="content" id="largo">
+                        <div id="caja">
+                            <div id="caja_texto">
+                                <div id="texto">
+                                    <p><strong>La catedral de Santa María la Real de la Almudena</strong>  construida durante los siglos XIX y XX en una mezcla de diferentes estilos : neoclásico en el exterior, neogótico en el interior y neorrománico en la cripta. Fue consagrada el 15 de junio 1993 por el papa Juan Pablo II. En su interior conserva obras de gran valor artístico y desde la cúpula que corona el edificio se divisa una espectacular perspectiva de la ciudad. En la actualidad es la sede episcopal de la archidiócesis de Madrid.</p>
+                                </div>
+                                <div id="texto_2">
+                                    <p><b>Dirección:</b> Plaza de la Almudena, SN 28013 Madrid  Teléfono: 915422200</p>
+                                    <b>Como llegar:</b></p> Autobuses:3, 25, 39, 46, 75, 138, 148, C1, C2, N16, N18, N19, N20 </br>Metro: Línea 2 Y 5 (Opera)</br>
+                                    Cercanías:Lineas C3 y C4 (Sol)<b> </p>Horarios:</b> Lunes a Domingo (9:00 a 20:30) Del 1 jul al 31 ago (10:00 a 14:00 - 17:00 a 21:00)
+                                    </p>
+                                 </div>
+                                <div id="texto_3">
+                                    <p><b> Entrada General:</b> 1 €uro</p>
+                    </div>
+                    </div>
+                            
+                            <div id="foto_catedraldelaalmudena"></div>
+            
+                            <div id="ir_museo">
+                              <a href="com.sygic.aura://coordinate|-3.713736|40.415322|walk"><input type="button" data-role="button" data-inline="true"  value="Ir a Pie" data-theme="d"/></a> 
+                                <a href="com.sygic.aura://coordinate|-3.713736|40.415322|drive"><input type="button" data-role="button" data-inline="true"  value="Ir en Coche" data-theme="d"/></a> 
+                            </div>
+                        </div>
+ </div>
+                      
+                    <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#monumentos" data-icon="back">Atras</a> 
+                                </li>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+                    </div>     
+                </div>
+                <!-- Fin CATEDRAL LA ALMUDENA -->
+         <!-- Fin MONUMENTOS -->
+         	
+         <!-- Empieza EVENTOS ANUALES -->
+          <div data-role="page" id="eventos">
+                <div data-role="header" align="center">
+                    <div>
+                        <div><h2>Eventos Anuales</h2></div>
+                    </div>
+                </div>
+            
+               	<div data-role="content" id="largo_eventos" >
+                    <div id="largo_recomendado_2" data-role="controlgroup" data-type="vertical" >
+                           <a href=""><input type="button" data-role="button"   value="Evento Por Mes" data-theme="a"/></a> 
+                           <div id="largox_2">
+                           		
+                           		<input type="button" id="botonmes1" data-role="button"   value="Enero" data-theme="b"/>
+                                <input type="button" id="botonmes2" data-role="button"   value="Febrero" data-theme="b"/> 
+                                <input type="button" id="botonmes3" data-role="button"   value="Marzo" data-theme="b"/>
+                                <input type="button" id="botonmes4" data-role="button"   value="Abril" data-theme="b"/>
+                                <input type="button" id="botonmes5" data-role="button"   value="Mayo" data-theme="b"/>	
+                                <input type="button" id="botonmes6" data-role="button"   value="Junio" data-theme="b"/>
+                                <input type="button" id="botonmes7" data-role="button"   value="Julio" data-theme="b"/>
+                                <input type="button" id="botonmes8" data-role="button"   value="Agosto" data-theme="b"/>
+                                <input type="button" id="botonmes9" data-role="button"   value="Septiembre" data-theme="b"/>
+                                <input type="button" id="botonmes10" data-role="button"   value="Octubre" data-theme="b"/>
+                                <input type="button" id="botonmes11" data-role="button"   value="Noviembre" data-theme="b"/>
+                                <input type="button" id="botonmes12" data-role="button"   value="Diciembre" data-theme="b"/> 
+                           </div>	
+                	</div>
+                    <div id="envento_info_mes"></div>
+        		</div>
+                
+                <div data-role="footer" align="center" data-theme="a">
+                    <nav data-role="navbar">
+                        <ul>
+                            <li>
+                                <a href="#quevisitar_es" data-icon="back" id="ref">Atras</a> 
+                            </li>
+                            <li>
+                                <a href="espaniol.html" data-icon="home" id="ref2">Inicio</a> 
+                            </li>
+                         </ul>
+                     </nav>
+                </div> 	
+            </div>
+         <!-- Fin EVENTOS ANUALES -->	
+     	 <!-- Empieza OTROS -->
+         <!-- Fin OTROS -->	
+         <!-- Fin QUE VISITAR NIVEL 2 -->	
+    <!-- FIN QUE VISITAR -->
+    
+    <!-- ----------------------------------------------- -->
+    
+    <!-- Empieza DONDE COMER -->	
+    <div data-role="page" id="dondecomer_es">
+        <div data-role="header" align="center">
+            <div>
+                <div><h2>Donde Comer</h2></div>
+            </div>
+        </div>
+    
+        <div data-role="content" id="largo" data-theme="b">
+            <ul data-role="listview">
+                <li><a href="#vaca"><h2>La Vaca Argentina</h2>
+                    	<p>Los mejores restaurantes en Madrid para disfrutar de todo el sabor de la carne argentina y del auténtico estilo New York. Cada vaca es única, elige la tuya.</p>
+                     </a>
+                </li>
+                <li>
+                    	<h2>Taj (Marqués de Cubas)</h2>
+                    	<p><b>Tipo de cocina:</b> India / <b>Precio:</b> de 15 a 25 € / <b>Teléfono:</b> 91 531 50 59 / <b>Dirección:</b> Marqués de Cubas, 6, 28014, Madrid - Zona: Centro - Metro: Banco de España</p>
+                </li>
+                <li>
+                    	<h2>El Rodizio</h2>
+                    	<p><b>Tipo de cocina:</b> Asador, Brasileña / <b>Precio:</b> de 15 a 25 € / <b>Teléfono:</b> 91 327 30 12 / <b>Dirección:</b> Medea, 4, 28037, Madrid - Zona: San Blas - Metro: Suanzes</p>
+                </li>
+                <li>
+                    	<h2>La Fondue de Tell</h2>
+                    	<p><b>Tipo de cocina:</b> Suiza / <b>Precio:</b> de 25 a 35 € / <b>Teléfono:</b> 91 594 42 77 / <b>Dirección:</b> Divino Pastor, 12, 28004, Madrid - Zona: Centro - Metro: Bilbao</p>
+                </li>
+            </ul>
+        </div>
+    
+        <div data-role="footer" align="center" data-theme="a">
+        	<nav data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="espaniol.html" data-transition="fade" data-icon="home">Inicio</a> 
+                    </li>
+                 </ul>
+             </nav>
+        </div>    	
+    </div>
+      <!-- Empieza DONDE COMER NIVEL 2-->	
+        <!-- Empieza RESTAURANTE LA VACA ARGENTINA -->	
+         <div data-role="page" id="vaca">
+            <div data-role="header" align="center">
+                <div>
+                    <div><h2>La Vaca Argentina</h2></div>
+                </div>
+            </div>
+        
+            <div data-role="content" data-theme="b">
+            	<img src="../images/LaVaca/vaca_inicio.jpg"  id="vacafondo" width=1020px height=420px/>
+                <div id="largo2" data-role="controlgroup" data-type="vertical">
+                    <a href=""><input type="button" data-role="button"   value="Direcciones en Madrid:" data-theme="a"/></a> 
+                    <a href="#vaca1"><input type="button" data-role="button"   value="Castellana 214" data-theme="b"/></a> 
+                    <a href="#vaca1"><input type="button" data-role="button"   value="Castellana 87" data-theme="b"/></a> 
+                    <a href="#vaca1"><input type="button" data-role="button"   value="Torrecilla del Puerto 5" data-theme="b"/></a> 
+                    <a href="#vaca1"><input type="button" data-role="button"   value="Ribera de Manzanares 123" data-theme="b"/></a> 			</div>
+            </div>
+        
+            <div data-role="footer" align="center" data-theme="a">
+                <nav data-role="navbar">
+                    <ul>
+                        <li>
+                            <a href="#dondecomer_es" data-icon="back">Atras</a> 
+                        </li>
+                        <li>
+                            <a href="espaniol.html" data-icon="home" data-transition="slideup">Inicio</a> 
+                        </li>
+                     </ul>
+                 </nav>
+            </div>   	
+        </div>
+            <!-- Empieza RESTAURANTE LA VACA ARGENTINA NIVEL 2 -->
+                <!-- Empieza RESTAURANTE LA VACA ARGENTINA Castellana 214-->		
+                <div data-role="page" id="vaca1">
+                    <div data-role="header" align="center">
+                        <div>
+                            <div><h2>La Vaca Argentina - Castellana 214</h2></div>
+                        </div>
+                    </div>
+                
+                    <div data-role="content">
+                    <div id="caja">
+                            <div id="caja_texto">
+                                <div id="texto">
+                                    <p><b>Cercano a la zona de Cuatro Torres Business Center</b>, en pleno eje Castellana-Plaza de Castilla y próximo a las Torres Kio, estamos ante el restaurante más emprendedor, ya que en sus salones se han llevado a cabo los meetings y reuniones de grandes empresas españolas e internacionales. Cuenta con una terraza climatizada y servicio de aparcacoches durante todo el año. En su decoración se evoca la época dorada argentina a través de impresionantes retratos de antiguas personalidades y lámparas colgantes. Es, sin lugar a dudas, uno de los restaurantes de La Vaca Argentina con más encanto. lámparas colgantes. Es, sin lugar a dudas, uno de los restaurantes de La Vaca Argentina con más encanto.lámparas colgantes. Es, sin lugar a dudas, uno de los restaurantes de La Vaca Argentina con más encanto.lámparas colgantes. Es, sin lugar a dudas, uno de los restaurantes de La Vaca Argentina con más encanto.lámparas colgantes. Es, sin lugar a dudas, uno de los restaurantes de La Vaca Argentina con más encanto.lámparas colgantes. Es, sin lugar a dudas, uno de los restaurantes de La Vaca Argentina con más encanto.lámparas colgantes. Es, sin lugar a dudas, uno de los restaurantes de La Vaca Argentina con más encanto.</p>
+                                </div>
+                                <div id="texto_2">
+                                    <p><b> Dirección:</b>  Paseo de la Castellana, 214 , Madrid.</br><b> Teléfono:</b>  91 345 26 65</br></br><b> Como llegar:</b>  ...</br></br><b> Posee:</b>  Terraza de verano y Aparcacoches.</br></br><b>Horiarios:</b> Apertura .. a .. aprox. ..: CERRADO!</p>
+                                </div>
+                                <div id="texto_3">
+                                    <p><b> Menús desde:</b> 31€/pax iva incluido.</p>
+                                </div>
+                            </div>
+                            
+                            <div id="foto_vaca"></div>
+                            <div id="foto_menu">
+                                <a href="#menu"></a>
+                            </div>
+            
+                            <div id="ir_vaca">
+                                <a href="com.sygic.aura://coordinate|-3.6893687|40.464455|walk"><input type="button" data-role="button" data-inline="true"  value="Ir a Pie" data-theme="d"/></a> 
+                                <a href="com.sygic.aura://coordinate|-3.6893687|40.464455|drive"><input type="button" data-role="button" data-inline="true"  value="Ir en Coche" data-theme="d"/></a> 
+                            </div>
+                        </div>
+                       
+                    </div>
+                
+                    <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#vaca" data-icon="back">Atras</a> 
+                                </li>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+                    </div> 	
+                </div>
+                <!-- FIN RESTAURANTE LA VACA ARGENTINA Castellana 214-->
+             <!-- Fin RESTAURANTE LA VACA ARGENTINA NIVEL 2 -->   
+            <!-- Empieza RESTAURANTE LA VACA ARGENTINA / MENU-->
+            <div data-role="page" id="menu">
+                <div data-role="header" align="center">
+                    <div>
+                        <div><h2>La Vaca Argentina - MENÚS</h2></div>
+                    </div>
+                </div>
+            
+                <div data-role="content" id="vacamenu" data-theme="b">
+                    <div id="largo3">
+                        <ul data-role="listview" data-filter="true" data-filter-placeholder=" Introduce tu busqueda" data-inset="true">
+                            <li data-role="list-divider"><p align="center">ENTRANTES</p></li>
+                            <li><p>Setas Empanadas</p></li>
+                            <li><p>Croquetas de Rabo de Toro</p></li>
+                            <li><p>Empanada Argentina</p></li>
+                            <li data-role="list-divider"><p align="center">ENSALADAS</p></li>
+                            <li><p>a rellenar</p></li>
+                            <li><p>a rellenar</p></li>
+                            <li data-role="list-divider"><p align="center">CARNES DEL MUNDO</p></li>
+                            <li><p>ARGENTINAS</p></li>
+                            <li><p>BLACK ANGUS NEBRASKA</p></li>
+                            <li><p>EUROPEAS</p></li>
+                            <li><p>WAGYU KOBE BEEF</p></li>
+                            <li><p>OTRAS ESPECIALIDADES</p></li>
+                            <li data-role="list-divider"><p align="center">ACOMPAÑAMIENTOS</p></li>
+                            <li><p>a rellenar</p></li>
+                            <li><p>a rellenar</p></li>
+                            <li data-role="list-divider"><p align="center">CARTA DE VINOS</p></li>
+                            <li><p>a rellenar</p></li>
+                            <li><p>a rellenar</p></li>
+                            <li data-role="list-divider"><p align="center">CARTA DE POSTRES</p></li>
+                            <li><p>a rellenar</p></li>
+                            <li><p>a rellenar</p></li>
+                            <li data-role="list-divider"><p align="center">MENÚS</p></li>
+                            <li><p>a rellenar</p></li>
+                            <li><p>a rellenar</p></li>
+                            <li><p>a rellenar</p></li>
+                        </ul>
+                    
+                    </div>
+                    
+                </div>
+            
+                <div data-role="footer" align="center" data-theme="a">
+                    <nav data-role="navbar">
+                        <ul>
+                            <li>
+                                <a href="#vaca1" data-icon="back">Atras</a> 
+                            </li>
+                            <li>
+                                <a href="espaniol.html" data-icon="home">Inicio</a> 
+                            </li>
+                         </ul>
+                     </nav>
+                </div>    	
+            </div>
+            <!-- FIN RESTAURANTE LA VACA ARGENTINA / MENU-->
+		<!-- FIN RESTAURANTES LA VACA ARGENTINA -->
+      <!-- Fin DONDE COMER NIVEL 2-->
+    <!-- FIN DONDE COMER -->
+    
+    <!-- ----------------------------------------------- -->
+    
+    <!-- Empieza OCIO -->
+    <div data-role="page" id="ocio_es">
+        <div data-role="header" align="center">
+            <div>
+                <div><h2>Ocio</h2></div>
+            </div>
+        </div>
+        
+        <div data-role="content" id="largo" data-theme="b">
+            <ul data-role="listview">
+                <li><a href="#zonasocio">Zonas de Ocio</a></li>
+                <li><a href="#discotecas">Discotecas</a></li>
+                <li><a href="#populares">Populares</a></li>
+            </ul>
+        </div>
+       
+        <div data-role="footer" align="center" data-theme="a">
+        	<nav data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="espaniol.html" data-transition="fade" data-icon="home">Inicio</a> 
+                    </li>
+                 </ul>
+             </nav>
+        </div>   	
+    </div>
+        <!-- Empieza OCIO NIVEL 2 -->
+            <!-- Empieza ZONA OCIO -->
+            	<div data-role="page" id="zonasocio">
+                <div data-role="header" align="center">
+                    <div>
+                        <div><h2>Zona de Ocio</h2></div>
+                    </div>
+                </div>
+            
+                <div data-role="content" id="largo" data-theme="b">
+                    <ul data-role="listview">
+                        <li><a href="#bolera">Bolera Chamartin</a></li>
+                        <li><a href="#">Ocio</a></li>
+                        <li><a href="#">Ocio</a></li>
+                    </ul>
+                </div>
+                <div data-role="footer" align="center" data-theme="a">
+                    <nav data-role="navbar">
+                        <ul>
+                            <li>
+                                <a href="#ocio_es" data-icon="back">Atras</a> 
+                            </li>
+                            <li>
+                                <a href="espaniol.html" data-icon="home">Inicio</a> 
+                            </li>
+                         </ul>
+                     </nav>
+                </div> 	
+            </div>
+             <!-- Empieza bolera NIVEL 2 -->
+                <!-- Empieza BOLERA CHAMARTIN-->	
+                <div data-role="page" id="bolera">
+                   	<div data-role="header" align="center">
+                    </div>
+                
+                    <div data-role="content" id="largo4" data-theme="b">
+                 		<a href="#irbolera" data-rel="dialog"><div id="botonirbolera"></div></a>
+                        <img src="../images/ocio/bolera.gif" width="100%" height="478"/>
+                    </div>
+                    <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#zonasocio" data-icon="back">Atras</a> 
+                                </li>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+                    </div> 	
+                </div>
+                <!-- Fin BOLERA CHAMARTIN-->
+                	<!-- Empieza IR A BOLERA -->
+    				<div data-role="page" id="irbolera">
+                        <div data-role="header" align="center">
+                            <div>
+                                <div><h2>Como quieres ir a la bolera:</h2></div>
+                            </div>
+                        </div>
+                       
+                        <div data-role="content">
+                            <div class="ui-grid-a" align="center">
+                                <div class="ui-block-a">
+                                    <a href="com.sygic.aura://coordinate|-3.685587|40.469797|walk"><img src="../images/css/pie.png"  width=100px height=110px/></a>
+                                </div>
+                                <div class="ui-block-b">    
+                                    <a href="com.sygic.aura://coordinate|-3.685587|40.469797|drive"><img src="../images/css/coche.png"  width=100px height=110px/></a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div data-role="footer" align="center">
+                           
+                        </div>   	
+                    </div>
+    				<!-- FIN IR A bolera -->
+            <!-- Fin ZONA OCIO -->
+                    
+            <!-- Empieza DISCOTECAS -->	
+            <div data-role="page" id="discotecas">
+                <div data-role="header" align="center">
+                    <div>
+                        <div><h2>Discotecas</h2></div>
+                    </div>
+                </div>
+            
+                <div data-role="content" id="largo" data-theme="b">
+                    <ul data-role="listview">
+                        <li><a href="#joyeslava">Joy Eslava</a></li>
+                        <li><a href="#">Disco</a></li>
+                        <li><a href="#">Disco</a></li>
+                        <li><a href="#">Disco</a></li>
+                        <li><a href="#">Disco</a></li>
+                    </ul>
+                </div>
+                <div data-role="footer" align="center" data-theme="a">
+                    <nav data-role="navbar">
+                        <ul>
+                            <li>
+                                <a href="#ocio_es" data-icon="back">Atras</a> 
+                            </li>
+                            <li>
+                                <a href="espaniol.html" data-icon="home">Inicio</a> 
+                            </li>
+                         </ul>
+                     </nav>
+                </div> 	
+            </div>
+             <!-- Empieza DISCOTECA NIVEL 2 -->
+                <!-- Empieza JOY ESLAVA-->	
+                <div data-role="page" id="joyeslava">
+                    <div data-role="header" align="center">
+                        
+                    </div>
+                
+                    <div data-role="content" id="largo4" data-theme="b">
+                    	<a href="#irjoyeslava" data-rel="dialog"><div id="botonirjoyeslava"></div></a>
+                        <img src="../images/Discoteca/joyeslava.gif" width="100%" height="478"/>
+                    </div>
+                    <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#discotecas" data-icon="back">Atras</a> 
+                                </li>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+                    </div> 	
+                </div>
+                <!-- Fin DISCOTECA JOY ESLAVA -->
+                	<!-- Empieza IR A JOY ESLAVA -->
+    				<div data-role="page" id="irjoyeslava">
+                        <div data-role="header" align="center">
+                            <div>
+                                <div><h2>Como quieres ir a Joy Eslava:</h2></div>
+                            </div>
+                        </div>
+                       
+                        <div data-role="content">
+                            <div class="ui-grid-a" align="center">
+                                <div class="ui-block-a">
+                                    <a href="com.sygic.aura://coordinate|-3.7064183|40.4171355|walk"><img src="../images/css/pie.png"  width=100px height=110px/></a>
+                                </div>
+                                <div class="ui-block-b">    
+                                    <a href="com.sygic.aura://coordinate|-3.7064183|40.4171355|drive"><img src="../images/css/coche.png"  width=100px height=110px/></a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div data-role="footer" align="center">
+                           
+                        </div>   	
+                    </div>
+    				<!-- FIN IR A JOY ESLAVA -->
+            <!-- Fin DISCOTECAS -->
+            
+            <!-- Empieza POPULARES -->	
+            <!-- Fin POPULARES -->
+        <!-- Fin OCIO NIVEL 2-->
+    <!-- FIN OCIO -->
+	
+    <!-- ----------------------------------------------- -->
+    
+    <!-- Empieza TRANSPORTE -->	
+    <div data-role="page" id="transporte_es">
+        <div data-role="header" align="center">
+            <div>
+                <div><h2>Transporte</h2></div>
+            </div>
+        </div>
+        
+        <div data-role="content" id="largo" data-theme="b">
+            <ul data-role="listview">
+            	<li><a href="#bus">Bus</a></li>
+                <li><a href="#metro">Metro</a></li>
+                <li><a href="#taxi">Taxi</a></li>
+                <li><a href="#renfe">Cercanias-Renfe</a></li>
+                <li><a href="#rentcar">Rent Car</a></li>
+            </ul>
+        </div>
+          
+        <div data-role="footer" align="center" data-theme="a">
+        	<nav data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="espaniol.html" data-transition="fade" data-icon="home">Inicio</a> 
+                    </li>
+                 </ul>
+             </nav>
+        </div> 	
+    </div>
+        <!-- Empieza TRANSPORTE NIVEL 2-->
+        
+        	<!-- Empieza BUS-->
+            	<div data-role="page" id="bus">
+                    <div data-role="header" align="center">
+                        <div>
+                            <div><h2>Autobus Madrid</h2></div>
+                        </div>
+                    </div>
+                
+                    <div data-role="content">
+                    <div id="caja">
+                            <div id="caja_texto">
+                                <div id="texto2">
+                                    <p><b>Billete Sencillo</b><br>
+                                    Válido para un solo viaje en el autobús en el que se adquiere.<br /><br />
+                                    <b>¿Dónde se adquiere?</b><br>
+                                    Exclusivamente a bordo del autobús.<br><br>
+                                    <b>Tarifa:</b>
+                                    1,50 €.                        
+                                    </p>
+                                    <p><b>Billete de 10 viajes.</b><br>
+                        			Válidos para realizar diez viajes en toda la red de líneas de la EMT, en toda la red de Metro Madrid y en la línea 1 de Metro Ligero. Es obligatorio validar el 				 									billete en las canceladoras situadas a tal efecto en los autobuses de la EMT.<br><br>
+                        			<b>¿Dónde se adquiere?</b><br>
+                        			Taquillas de la red de Metro, quioscos de prense y estancos autorizados.<br><br>
+                        			<b>Tarifa:</b><br>
+                        			Billete EMT, Metro Zona A y línea 1 de Metro Ligero: 12,20 € <br> Billete de 10 viajes de EMT con transbordo: 18,30 €
+                                    </p>
+                                </div>
+                               
+                            </div>
+                            
+                            
+                            <div id="foto_texto2">
+                                <img src="../images/transporte/bus.jpg" width="350px">
+                				<div id="boton_texto2" align="center"><a href="#busplano"><input type="button" data-role="button" data-inline="true"  value="ver plano" data-theme="d" id=""/></a></div>
+                			</div>
+            
+                            
+                        </div>
+                       
+                    </div>
+                
+                    <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#transporte_es" data-icon="back">Atras</a> 
+                                </li>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+                    </div> 	
+                </div>
+                    <!-- Empieza BUS MAPA -->
+                    <div data-role="page" id="busplano">
+                        <div data-role="header" align="center">
+                            <div>
+                                <div><h2>Bus de madrid</h2></div>
+                            </div>
+                        </div>
+                        
+                        <div data-role="content" id="largo5" style="font-size:14px;">
+                        	<img src="../images/transporte/planobus2.jpg" width="1600" height="1600"/>
+                        </div>
+                          
+                         <div data-role="footer" align="center" data-theme="a">
+                                <nav data-role="navbar">
+                                    <ul>
+                                        <li>
+                                            <a href="#bus" data-icon="back" >Atras</a> 
+                                        </li>
+                                        <li>
+                                            <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                        </li>
+                                     </ul>
+                                 </nav>
+                         </div>      
+                    </div>
+                    <!--Fin BUS MAPA-->
+            <!-- Fin BUS-->
+            
+            <!-- Empieza METRO-->
+                <div data-role="page" id="metro">
+                        <div data-role="header" align="center">
+                            <div>
+                                <div><h2>Metro de madrid</h2></div>
+                            </div>
+                        </div>
+                    
+                        <div data-role="content">
+                        <div id="caja">
+                                <div id="caja_texto">
+                                    <div id="texto2">
+                                        <p><b>LA RED DE METRO SE EXTIENDE POR LA ZONA TARIFARIA A EN EL MUNICIPIO DE MADRID Y POR OTROS MUNICIPIOS DE LA COMUNIDAD DE MADRID PERTENECIENTES A LAS ZONAS  	 									TARIFARIAS B1, B2 y B3.</b><br><br>
+                                        <b>Billete Sencillo Combinado Metro - 3 €</b>
+                                        Válido para un solo viaje por toda la red de<br> Metro de la Comunidad de Madrid, cualquier día de la semana. Se adquiere en taquilla<br> o máquina         	  										expendedora, siendo necesario en ambos casos acceder a la red por los torniquetes de acceso.
+                                        </p>
+                                        <p><b>Billete Combinado 10 viajes - 18,30 €</b>
+                                        Válido para realizar 10 viajes por toda la red de Metro de la Comunidad de Madrid, en cualquier trayecto y en cualquier día de la semana.</p>
+                                        <b>Horario de Servicio </b><br>
+                                        El horario de apertura al público es de 6:00 AM a 1:30 AM durante todos los días del año,<br> a excepción de la estación de Pitis (línea 7), el tramo Puerta de 			 										Arganda-Arganda del Rey<br> y los accesos con horario especial. <br><br>
+            
+                                        <b>Horario de Bicicletas </b>
+                                        Sábados, domingos y festivos durante el horario de servicio. Laborales (lunes a viernes) de 10:00 h. a 12:30 h. y de 21:00 hasta el cierre de servicio 
+                                    </div>
+                                   
+                                </div>
+                                
+                                
+                                <div id="foto_texto2">
+                                    <img src="../images/transporte/metro.gif" width="350px">
+                                    <div id="boton_texto2" align="center"><a href="#metroplano"><input type="button" data-role="button" data-inline="true"  value="ver plano" data-theme="d"/></a></div>
+                                </div>
+                
+                                
+                            </div>
+                           
+                        </div>
+                    
+                        <div data-role="footer" align="center" data-theme="a">
+                            <nav data-role="navbar">
+                                <ul>
+                                    <li>
+                                        <a href="#transporte_es" data-icon="back">Atras</a> 
+                                    </li>
+                                    <li>
+                                        <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                    </li>
+                                 </ul>
+                             </nav>
+                        </div> 	
+                    </div>
+                    <!-- Empieza METRO MAPA-->
+                    <div data-role="page" id="metroplano">
+                        <div data-role="header" align="center">
+                            <div>
+                                <div><h2>Metro de madrid</h2></div>
+                            </div>
+                        </div>
+                        
+                        <div data-role="content" id="largo5" style="font-size:14px;">
+                        	<img src="../images/transporte/plano1.jpg" width="1600" height="1600"/>
+                        </div>
+                          
+                         <div data-role="footer" align="center" data-theme="a">
+                                <nav data-role="navbar">
+                                    <ul>
+                                        <li>
+                                            <a href="#metro" data-icon="back" >Atras</a> 
+                                        </li>
+                                        <li>
+                                            <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                        </li>
+                                     </ul>
+                                 </nav>
+                         </div>      
+                    </div>
+                    <!-- Fin METRO MAPA-->
+            <!-- Fin METRO -->
+            
+            <!-- Empieza RENFE-->
+            	 <div data-role="page" id="renfe">
+                        <div data-role="header" align="center">
+                            <div>
+                                <div><h2>Cercanias / Renfe</h2></div>
+                            </div>
+                        </div>
+                    
+                        <div data-role="content">
+                        <div id="caja">
+                                <div id="caja_texto">
+                                    <div id="texto_cercanias">
+                                        <p> Cercanías Madrid es el servicio ferroviario Renfe que conecta la ciudad de Madrid con su área metropolitana y las principales poblaciones de la Comunidad de Madrid. Su red se extiende por casi toda la Comunidad, pero además alcanza ya diversas localidades limítrofes de las provincias de Guadalajara (Azuqueca y Guadalajara) y toca la de Segovia (Cotos). </p>
+                                
+   										
+							<div data-role="controlgroup" data-type="vertical" id="zonascercanias">
+                    <input type="button" data-role="button"   value="Zonas" data-theme="a"/>
+                    <input type="button" data-role="button"   value="1/2" data-theme="b"/>
+                   	<input type="button" data-role="button"   value="3" data-theme="b"/>
+                    <input type="button" data-role="button"   value="4" data-theme="b"/>
+                    <input type="button" data-role="button"   value="5" data-theme="b"/> 
+                    <input type="button" data-role="button"   value="6" data-theme="b"/> 
+                    <input type="button" data-role="button"   value="7" data-theme="b"/> 
+                    <input type="button" data-role="button"   value="Zona Verde" data-theme="b" style=" border-bottom:solid 1px black;"/> 
+                    </div>
+                    
+                    <div data-role="controlgroup" data-type="vertical" id="preciocercanias">
+                    <input type="button" data-role="button"   value="Precios" data-theme="a"/>
+                    <input type="button" data-role="button"   value="1,60 €" data-theme="b"/>
+                   	<input type="button" data-role="button"   value="1,75 €" data-theme="b"/>
+                    <input type="button" data-role="button"   value="2,50 €" data-theme="b"/>
+                    <input type="button" data-role="button"   value="3,30 €" data-theme="b"/> 
+                    <input type="button" data-role="button"   value="3,95 €" data-theme="b"/> 
+                    <input type="button" data-role="button"   value="5,30 €" data-theme="b"/> 
+                    <input type="button" data-role="button"   value="8,40 €" data-theme="b"/> 
+                    </div>
+                   		<div id="horarioscercanias">	
+                            <ul data-role="listview" data-inset="true" data-divider-theme="a" >
+                                <li data-role="list-divider" class="centrar">Horarios</li>
+                                <li class="centrar">06:00 *</li>
+                                <li class="centrar">00:00 *</li>
+                                <li data-role="list-divider" class="centrar">*Dependiendo de las líneas.</li>
+                            </ul>
+                         </div> 
+                    
+                    		         <p style="position:relative; margin-left:735px; margin-top:10px;"><a href="#cercaniasplano"><input type="button" data-role="button" data-inline="true"  value="ver plano" data-theme="d"/></a></p>
+                 
+                                        
+                                        
+                                    </div>
+                           
+                                </div>
+                           
+                
+                                
+                            </div>
+                           
+                        </div>
+                    
+                        <div data-role="footer" align="center" data-theme="a">
+                            <nav data-role="navbar">
+                                <ul>
+                                    <li>
+                                        <a href="#transporte_es" data-icon="back">Atras</a> 
+                                    </li>
+                                    <li>
+                                        <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                    </li>
+                                 </ul>
+                             </nav>
+                        </div> 	
+                    </div>
+                    <!-- Empieza RENFE MAPA-->
+                    <div data-role="page" id="cercaniasplano">
+                        <div data-role="header" align="center">
+                            <div>
+                                <div><h2>Plano Cercanias/Renfe</h2></div>
+                            </div>
+                        </div>
+                        
+                        <div data-role="content" id="largo5" style="font-size:14px;">
+                        	<img src="../images/transporte/planocercaniasmadrid.png" width="1600" height="1600"/>
+                        </div>
+                          
+                         <div data-role="footer" align="center" data-theme="a">
+                                <nav data-role="navbar">
+                                    <ul>
+                                        <li>
+                                            <a href="#renfe" data-icon="back" >Atras</a> 
+                                        </li>
+                                        <li>
+                                            <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                        </li>
+                                     </ul>
+                                 </nav>
+                         </div>      
+                    </div>
+                    <!-- Fin RENFE MAPA-->
+            <!-- Fin RENFE-->
+            
+            <!-- Empieza TAXI-->
+            <div data-role="page" id="taxi">
+                    <div data-role="header" align="center">
+                        <div>
+                            <div><h2>Taxi de Madrid</h2></div>
+                        </div>
+                    </div>
+                
+                    <div data-role="content">
+                    <div id="caja">
+                            <div id="caja_texto">
+                                <div id="texto2">
+                                        <p><b>Los taxis de Madrid</b> son una excelente manera de trasladarte por la ciudad y te ahorran<br /> el inconveniente de extraviarte. Asegúrate de verificar   	 			 							siempre que el conductor haya encendido el medidor y que el mismo esté puesto en la tarifa correcta.<br /><br />                   
+                                        </p>
+                                </div>
+                                <ul data-role="listview" data-split-icon="gear" data-split-theme="d" data-inset="true" style="position:relative; margin-top:50px; margin-left:-140px; width:300px;">
+                                
+                                	<li>
+                                        <img src="../images/transporte/taximercedes.png" style="left:-1px; top:-2px;"/>
+                                        <h2 style=" text-align:center;font-size:17px; text-height:bold;">Taxi Mercedes</h2>
+                                        <p style=" text-align:center; font-variant:small-caps; font-size:15px;">Teléfono: 91 639 41 55</p>
+                                    </li>
+                                    <li>
+                                    		<img src="../images/transporte/redtaxi.png"/>
+                                        <h2 style=" text-align:center;font-size:17px; text-height:bold;">Red Taxi</h2>
+                                        <p style=" text-align:center; font-variant:small-caps; font-size:15px;">Teléfono: 675 71 51 00</p>
+                                      
+                                    </li>
+                                    		</ul>
+                                            
+                                            <ul data-role="listview" data-split-icon="gear" data-split-theme="d" data-inset="true" style="position:relative; margin-top:-175px; margin-left:180px;width:300px;">
+                                    
+                                    <li>
+                                    		  <img src="../images/transporte/servitaxi.png" style="left:-1px; top:-1px;"/>
+                                        <h2 style=" text-align:center;font-size:17px; text-height:bold;">Servi Taxi Madrid</h2>
+                                        <p style=" text-align:center; font-variant:small-caps; font-size:15px;">Teléfono: 91 230 26 69</p>
+                                        
+                                     </li>
+                                     <li>
+                                        <img src="../images/transporte/radiotelefono.png" style="left:-1px;"/>
+                                        <h2 style=" text-align:center; font-size:17px; text-height:bold;">Radio Telefono Taxi</h2>
+                                        <p style=" text-align:center; font-variant:small-caps; font-size:15px;">Teléfono: 91 547 82 00</p>
+                                     </li>
+                                     		</ul>
+                                 
+                            </div>
+            				<div id="foto_taxi1">
+                                    <img src="../images/transporte/taxi.gif">
+                            </div>
+                        </div>
+                     </div>
+                
+                    <div data-role="footer" align="center" data-theme="a">
+                        <nav data-role="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#transporte_es" data-icon="back">Atras</a> 
+                                </li>
+                                <li>
+                                    <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                </li>
+                             </ul>
+                         </nav>
+                    </div> 	
+                </div>
+            <!-- Fin TAXI-->
+            
+            <!-- Empieza RENT CAR-->
+            <div data-role="page" id="rentcar">
+                 <div data-role="header" align="center">
+                      <div>
+                           <div><h2>Alquiler de vehiculos</h2></div>
+                      </div>
+                  </div>
+                                
+                  <div data-role="content" id="largo" data-theme="b">
+                      <ul data-role="listview">
+                                        <li><a href="#hertz">Hertz</a></li>
+                                        
+                                        <li><a href="#europcar">Europcar</a></li>
+                                    </ul>
+                  </div>
+                                  
+                  <div data-role="footer" align="center" data-theme="a">
+                      <nav data-role="navbar">
+                                        <ul>
+                                            <li>
+                                         		<a href="#transporte_es" data-icon="back">Atras</a> 
+                                     		</li>
+                                            <li>
+                                                <a href="espaniol.html" data-transition="fade" data-icon="home">Inicio</a> 
+                                            </li>
+                                         </ul>
+                                     </nav>
+                  </div> 	
+            </div>
+            	<!-- Empieza hertz-->
+                     <div data-role="page" id="hertz">
+                     	<div data-role="header" align="center">
+                              <div>
+                                <div><h2>HERTZ</h2></div>
+                              </div>
+                        </div>
+                        
+                        <div data-role="content" align="center">
+                                <img src="../images/transporte/hertz.gif"  height="376" width="950"/>
+                        </div>
+                    
+                        <div data-role="footer" align="center" data-theme="a">
+                            <nav data-role="navbar">
+                                <ul>
+                                     <li>
+                                         <a href="#rentcar" data-icon="back">Atras</a> 
+                                     </li>
+                                    <li>
+                                        <a href="espaniol.html" data-icon="home" data-transition="slideup">Inicio</a> 
+                                    </li>
+                                 </ul>
+                             </nav>
+                        </div> 	
+                    </div>
+                <!--termina hertz-->
+                <!--empieza europcar-->
+                  	<div data-role="page" id="europcar">
+                         <div data-role="header" align="center">
+                               <div>
+                                                <div><h2>Europcar</h2></div>
+                                            </div>
+                         </div>
+                                        
+                         <div data-role="content" id="largo">
+                              <div id="caja">
+                                    <div id="caja_texto">
+                                          <div id="texto">
+                                                        <p>Europcar Espana alquiler de coches le ofrece precios económicos, magnífico servicio y vehículos nuevos. Situados en aeropuertos, estaciones de ferrocarril y en el centro de ciudad, las oficinas de alquiler de coches en Espana están donde los necesite. Para negocios o placer, Europcar tiene el coche de alquiler o el camión adecuado para usted. Alquile hoy un coche con Europcar.<br><br>Si usted busca un coche de alquiler, un leasing, un coche o una furgoneta de sustitución, Europcar estará encantado de servirle en sus estaciones de alquiler de coches en Espana.<br><br>Para encontrar la estación de alquiler de coches en España mas convenientemente localizada para sus necesidades, por favor compruebe el mapa debajo del cual indica todas nuestras ubicaciones de alquiler de coches en Espana Puede seleccionar el país donde usted quiere recoger su alquiler de coches en Espana de la lista a la izquierda o usar el mapa a la derecha para usar el zoom sobre el país.</p>
+                                                    </div>
+                                          <div id="texto_2">
+                                                        <p><b> Direcciones y telefonos:</b><br>Pº DE LA CASTELLANA 193, tlf-915559930.</br>
+                                                        SAN LEONARDO 8, tlf-915418892.<br>
+                                                        AV. DEL PARTENON 16-18, tlf-917226226.<br><br>
+                                                        <b>Horarios:</b><br>
+                                                        (*)Con cargo extra<br>
+                                                            De Lunes a Viernes: 
+                                                            00:01-08:29*
+                                                            08:30-13:30
+                                                            13:31-16:29*
+                                                            16:30-19:30
+                                                            19:31-23:59*<br>
+                                                            Sabados y Domingos: Cerrado.
+                                                        </p>
+                                                  	</div>          
+                                    </div>
+                              </div>
+                         </div>
+                                          
+                         <div data-role="footer" align="center" data-theme="a">
+                              <nav data-role="navbar">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#rentcar" data-icon="back">Atras</a> 
+                                                    </li>
+                                                    <li>
+                                                        <a href="espaniol.html" data-icon="home">Inicio</a> 
+                                                    </li>
+                                                 </ul>
+                                             </nav>
+                         </div>     
+               		</div>
+       			<!--termina europcar-->
+            <!-- Fin RENT CAR-->
+            	
+        <!-- Fin TRANSPORTE NIVEL 2-->	
+	<!-- FIN TRANSPORTE -->	
+
+    <!-- ----------------------------------------------- -->
+    
+    </body>
+
+</html>

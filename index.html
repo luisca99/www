@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Guia</title>
+    <link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+    <script src="index.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no, maximum-scale=1.0"/>
+
+</head> 
+
+<body onLoad="esp()"> 
+	<script language="Javascript">
+	document.oncontextmenu = function(){return false}
+	
+	</script>
+    <div data-role="page" id="inicio">
+        <div data-role="header" align="center">
+            <div  id="cabecera">
+                <div  id="bandera1">
+                    <img src="Banderas/uk.png" width=48px height=48px name="buk" onClick="banderauk();"/>
+                    <img src="Banderas/de.png" width=48px height=48px onClick="banderade();"/> 
+                </div>
+                <div  id="cabecera_texto">
+                    <p id="titulon">Condiciones, uso y responsabilidades</p>
+                </div>
+                <div  id="bandera2">
+                    <img src="Banderas/es.png" width=48px height=48px onClick="banderaes();"/> 
+                    <img src="Banderas/fr.png" width=48px height=48px onClick="banderafr();"/>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="content">
+            <div id="Condiciones" align="center">
+                <p id="texto_cond">Están reservados los derechos de autor de todo el contenido del ------- . Todos los derechos son propiedad de ----- o de terceros. Todos los elementos en el ------ son libremente accesibles sólo para fines de navegación. Se permite la reproducción del material o parte de éste en forma escrita o electrónica arbitraria, sólo con la mención expresa de ----------. Se prohíbe la reproducción, transmisión, modificación, enlace o uso del ----------- para fines públicos o comerciales sin la autorización por escrito con antelación de ---------. 
+                </p>
+            </div>  
+        </div>
+
+        <div data-role="footer" align="center" >
+            <div id="botones">
+                  <div data-role="footer" align="center" id="pie_1">
+                      <div id="piebot"> 		
+                           <input type="button" data-role="button" data-inline="true"  value="Acepto" data-theme="e"/> 
+                      </div>
+                 </div>
+             </div>     
+             <div id="botonuk"> <!--k--> 
+                <div data-role="footer" align="center" id="pie_1">
+                    <div id="piebot">
+            			<input type="button" data-role="button" data-inline="true"  value="Done" data-theme="e"/> 
+                    </div>
+            	</div>
+            </div>       
+            <div id="botonde"> <!--e--> 
+            	<div data-role="footer" align="center" id="pie_1">
+                	<div id="piebot">
+                  		<input type="button" data-role="button" data-inline="true"  value="Ich stimme zu" data-theme="e"/>
+                    </div>
+            	</div>
+            </div>
+            <div id="botonfr"> <!--r-->   
+            	<div data-role="footer" align="center" id="pie_1">
+                    <div id="piebot">
+            			<input type="button" data-role="button" data-inline="true"  value="Je suis d'accord" data-theme="e"/>
+        			</div>
+             	</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

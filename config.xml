@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.example"
+    version   = "1.0.0">
+
+<name>GUIA2-2013</name>
+<icon src="Icono/AppIcon.png" gap:plataform="android" gap:density="ldpi"/>
+<gap:splash src="Splash/sp.png" gap:plataform="android" gap:density="ldpi"/>
+<description>
+La guía y recomendaciones del 2013.
+</description>
+<preference name="permissions" value="none"/>
+<author href="www.lcf.hol.es" email="luisk99@gmail.com">
+Luis Fiore
+</author>
+
+</widget>
