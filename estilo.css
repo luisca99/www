@@ -226,7 +226,7 @@ a, a:active, a:visited
 	float:left;
 	position:relative;
 	height:380px;
-	width:97%;
+	width:97.2%;
 }
 /* Fin MENU PIE PRINCIPAL */
 
@@ -471,89 +471,6 @@ a, a:active, a:visited
 }
 /*  Fin METRO */
 
-/*  MONUMENTOS 
-#foto_puertadelso{
-	float: left;
-	position: relative;
-	height: 380px;
-	width: 34%;
-	border-radius: 10px;
-	box-shadow: 3px 3px 5px #888;
-	background-image: url(images/Monumentos/puertadelsol.jpg);
-}
-#foto_plazamayo{
-	float: left;
-	position: relative;
-	height: 380px;
-	width: 34%;
-	border-radius: 10px;
-	box-shadow: 3px 3px 5px #888;
-	background-image: url(images/Monumentos/plazamayor.jpg);
-}
-#foto_plazadelavilla{
-	float: left;
-	position: relative;
-	height: 380px;
-	width: 34%;
-	border-radius: 10px;
-	box-shadow: 3px 3px 5px #888;
-	background-image: url(images/Monumentos/plazadelavilla.jpg);
-}
-#foto_colegiatasanisidro{
-	float: left;
-	position: relative;
-	height: 380px;
-	width: 34%;
-	border-radius: 10px;
-	box-shadow: 3px 3px 5px #888;
-	background-image: url(images/Monumentos/colegiatasanisidro.jpg);
-}
-#foto_sanfranciscogrande{
-	float: left;
-	position: relative;
-	height: 380px;
-	width: 34%;
-	border-radius: 10px;
-	box-shadow: 3px 3px 5px #888;
-	background-image: url(images/Monumentos/sanfranciscogrande.jpg);
-}
-#foto_cibeles{
-	float: left;
-	position: relative;
-	height: 380px;
-	width: 34%;
-	border-radius: 10px;
-	box-shadow: 3px 3px 5px #888;
-	background-image: url(images/Monumentos/Cibeles.jpg);
-}
-#foto_plazadeoriente{
-	float: left;
-	position: relative;
-	height: 380px;
-	width: 34%;
-	border-radius: 10px;
-	box-shadow: 3px 3px 5px #888;
-	background-image: url(images/Monumentos/plazadeoriente.jpg);
-}
-#foto_palacioreal{
-	float: left;
-	position: relative;
-	height: 380px;
-	width: 34%;
-	border-radius: 10px;
-	box-shadow: 3px 3px 5px #888;
-	background-image: url(images/Monumentos/palacioreal.jpg);
-}
-#foto_catedraldelaalmudena{
-	float: left;
-	position: relative;
-	height: 380px;
-	width: 34%;
-	border-radius: 10px;
-	box-shadow: 3px 3px 5px #888;
-	background-image: url(images/Monumentos/catedraldelaalmudena.jpg);
-}
-  FIN MONUMENTOS */
   /*  MONUMENTOS */
 #foto_cibeles{
 	float: left;
