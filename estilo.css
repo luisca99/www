@@ -609,15 +609,6 @@ a, a:active, a:visited
 	box-shadow: 3px 3px 5px #888;
 	background-image: url(images/Monumentos/sanfranciscogrande.jpg);
 }
-#foto_cibeles{
-	float: left;
-	position: relative;
-	height: 380px;
-	width: 34%;
-	border-radius: 10px;
-	box-shadow: 3px 3px 5px #888;
-	background-image: url(images/Monumentos/943%201%20Fuente%20Cibeles%20Madrid.jpg);
-}
 #foto_plazadeoriente{
 	float: left;
 	position: relative;
@@ -645,14 +636,14 @@ a, a:active, a:visited
 	box-shadow: 3px 3px 5px #888;
 	background-image: url(images/Monumentos/catedraldelaalmudena.jpg);
 }
-#foto_plazadeespaña{
+#foto_plazadeespania{
 	float: left;
 	position: relative;
 	height: 380px;
 	width: 34%;
 	border-radius: 10px;
 	box-shadow: 3px 3px 5px #888;
-	background-image: url(images/Monumentos/plazadeespa%C3%B1a.jpg);
+	background-image: url(images/Monumentos/plazadeespania.jpg);
 }
 #foto_templodedebod{
 	float: left;
