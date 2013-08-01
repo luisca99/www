@@ -43,7 +43,7 @@ a, a:active, a:visited
 }
 #piebot{
 	position:relative;
-	top:15px;
+	top:-17px;
 }
 #buk{
 	cursor:pointer;
@@ -312,6 +312,14 @@ a, a:active, a:visited
 	left:0px;
 	z-index:0;
 }
+#restorante{
+	float:left;
+	position: absolute;
+	width:100%;
+	left:0px;
+	top:-8px;
+	z-index:0;
+}
 #foto_vaca{
 	float:left;
 	position:relative;
@@ -411,6 +419,30 @@ a, a:active, a:visited
 	left:70px;
 	z-index:50;
 }
+#botonirterrazacasino{
+	position:absolute;
+	width:80px;
+	height:50px;
+	top:253px;
+	left:10px;
+	z-index:100;
+}
+#botonircluballard{
+	position:absolute;
+	width:75px;
+	height:50px;
+	top:33px;
+	left:350px;
+	z-index:100;
+}
+#botonirkabukiwellington{
+	position:absolute;
+	width:80px;
+	height:50px;
+	top:273px;
+	left:100px;
+	z-index:100;
+}
 /* Fin Botones TRANSPARENTES*/
 
 /*  METRO */
@@ -439,7 +471,7 @@ a, a:active, a:visited
 }
 /*  Fin METRO */
 
-/*  MONUMENTOS */
+/*  MONUMENTOS 
 #foto_puertadelso{
 	float: left;
 	position: relative;
@@ -520,6 +552,224 @@ a, a:active, a:visited
 	border-radius: 10px;
 	box-shadow: 3px 3px 5px #888;
 	background-image: url(images/Monumentos/catedraldelaalmudena.jpg);
+}
+  FIN MONUMENTOS */
+  /*  MONUMENTOS */
+#foto_cibeles{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/Cibeles.jpg);
+}
+#foto_puertadelsol{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/puertadelsol.jpg);
+}
+#foto_plazamayor{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/plazamayor.jpg);
+}
+#foto_plazadelavilla{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/plazadelavilla.jpg);
+}
+#foto_colegiatasanisidro{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/colegiatasanisidro.jpg);
+}
+#foto_sanfranciscogrande{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/sanfranciscogrande.jpg);
+}
+#foto_cibeles{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/943%201%20Fuente%20Cibeles%20Madrid.jpg);
+}
+#foto_plazadeoriente{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/plazadeoriente.jpg);
+}
+#foto_palacioreal{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/palacioreal.jpg);
+}
+#foto_catedraldelaalmudena{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/catedraldelaalmudena.jpg);
+}
+#foto_plazadeespaña{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/plazadeespa%C3%B1a.jpg);
+}
+#foto_templodedebod{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/templodedebod.jpg);
+}
+#foto_granvia{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/granvia.jpg);
+}
+#foto_plazadecolon{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/plazadecolon.jpg);
+}
+#foto_puertadealcala{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/puertadealcala.jpg);
+}
+#foto_palaciodecristal{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/palaciodecristal.jpg);
+}
+#foto_fuentedeneptuno{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/fuentedeneptuno.jpg);
+}
+#foto_estaciondeatocha{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/estaciondeatocha.jpg);
+}
+#foto_plazadetorosventas{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/plazadetorosventas.jpg);
+}
+#foto_puentedetoledo{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/puentedetoledo.jpg);
+}
+#foto_puentedearganzuela{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/puentedearganzuela.jpg);
+}
+#foto_torrebbva{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/torrebbva.jpg);
+}
+#foto_torrepicasso{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/torrepicasso.jpg);
+}
+#foto_cuatrotorres{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Monumentos/cuatrotorres.jpg);
 }
 /*  FIN MONUMENTOS */
 
