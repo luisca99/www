@@ -279,7 +279,7 @@ a, a:active, a:visited
 	position:relative;
 	height:380px;
 	width: 32%;
-	background:url(images/Museos/reinasofia.gif) no-repeat;
+	background:url(images/Museos/reinasofia.jpg) no-repeat;
 	border-radius:10px;
 	box-shadow: 3px 3px 5px #888;
 }
@@ -316,6 +316,7 @@ a, a:active, a:visited
 	float:left;
 	position: absolute;
 	width:100%;
+	height:418px;
 	left:0px;
 	top:-8px;
 	z-index:0;
@@ -354,6 +355,19 @@ a, a:active, a:visited
 	position:relative;
 	width:200px;
 	height:60px;
+}
+#largo8 ul li{
+	height:20px;
+}
+#largo8 ul li p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	margin-top:0px;
+}
+
+#largo8{
+	position:relative;
+	height:1050px;
 }
 /*  FIN VACA ARGENTINA ( Se utiliza en varios sitios ) */
 #largo3{
@@ -405,10 +419,10 @@ a, a:active, a:visited
 }
 #botonirbolera{
 	position:absolute;
-	width:75px;
+	width:95px;
 	height:40px;
 	top:413px;
-	left:520px;
+	left:530px;
 	z-index:100;
 }
 #botonhotel{
@@ -443,6 +457,44 @@ a, a:active, a:visited
 	left:100px;
 	z-index:100;
 }
+/* Boton JAVI */
+#botonirsergiarola{
+	z-index:2;
+	position:absolute;
+	width:120px;
+	height:50px;
+	/*border:solid 3px red;*/
+	margin-top:310px;
+	margin-left:0px;
+}
+#botonirramonfreixa{
+	z-index:2;
+	position:absolute;
+	width:120px;
+	height:50px;
+	/*border:solid 3px red;*/
+	margin-top:327px;
+	margin-left:755px;
+}
+#botonirsantceloni{
+	z-index:2;
+	position:absolute;
+	width:120px;
+	height:50px;
+	/*border:solid 3px red;*/
+	margin-top:327px;
+	margin-left:755px;
+}
+#botonirzalacain{
+	z-index:2;
+	position:absolute;
+	width:130px;
+	height:60px;
+	/*border:solid 3px red;*/
+	margin-top:233px;
+	margin-left:820px;
+}
+/* FIn Boton JAVI */
 /* Fin Botones TRANSPARENTES*/
 
 /*  METRO */
@@ -722,7 +774,7 @@ a, a:active, a:visited
 	float:left;
 	position:relative;
 	height:380px;
-	width:97%;
+	width:97.1%;
 	overflow:hidden;
 	background-image: url(images/Eventos/Eventomadrid.gif);
 }
