@@ -457,6 +457,54 @@ a, a:active, a:visited
 	left:100px;
 	z-index:100;
 }
+#botonirwarner{
+	position:absolute;
+	width:90px;
+	height:40px;
+	top:93px;
+	left:900px;
+	z-index:100;
+}
+#botonirkinepolis{
+	position:absolute;
+	width:95px;
+	height:40px;
+	top:383px;
+	left:80px;
+	z-index:100;
+}
+#botonirteatroreal{
+	position:absolute;
+	width:95px;
+	height:40px;
+	top:403px;
+	left:130px;
+	z-index:100;
+}
+#botonirzara{
+	position:absolute;
+	width:95px;
+	height:40px;
+	top:366px;
+	left:810px;
+	z-index:100;
+}
+#botoniradolfodominguez{
+	position:absolute;
+	width:95px;
+	height:40px;
+	top:373px;
+	left:660px;
+	z-index:100;
+}
+#botonirloewe{
+	position:absolute;
+	width:95px;
+	height:40px;
+	top:390px;
+	left:280px;
+	z-index:100;
+}
 /* Boton JAVI */
 #botonirsergiarola{
 	z-index:2;
@@ -493,6 +541,60 @@ a, a:active, a:visited
 	/*border:solid 3px red;*/
 	margin-top:233px;
 	margin-left:820px;
+}
+#botonirfaunia{
+		z-index:2;
+	position:absolute;
+	width:165px;
+	height:60px;
+	/*border:solid 3px red;*/
+	margin-top:390px;
+	margin-left:820px;
+}
+#botoniraquopolis{
+		z-index:2;
+	position:absolute;
+	width:145px;
+	height:60px;
+	/*border:solid 3px red;*/
+	margin-top:348px;
+	margin-left:580px;
+}
+#botonirnewgaramond{
+		z-index:2;
+	position:absolute;
+	width:135px;
+	height:60px;
+	/*border:solid 3px red;*/
+	margin-top:360px;
+	margin-left:270px;
+}
+#botonircortefiel{
+		z-index:2;
+	position:absolute;
+	width:125px;
+	height:60px;
+	/*border:solid 3px red;*/
+	margin-top:400px;
+	margin-left:874px;
+}
+#botonirjaviersimorra{
+		z-index:2;
+	position:absolute;
+	width:155px;
+	height:60px;
+	/*border:solid 3px red;*/
+	margin-top:400px;
+	margin-left:434px;
+}
+#botonirpuntroma{
+		z-index:2;
+	position:absolute;
+	width:125px;
+	height:60px;
+	/*border:solid 3px red;*/
+	margin-top:320px;
+	margin-left:680px;
 }
 /* FIn Boton JAVI */
 /* Fin Botones TRANSPARENTES*/
