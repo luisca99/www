@@ -1070,3 +1070,185 @@ a, a:active, a:visited
 	text-shadow:none;
 }
 /* FIN DE TRANSPORTE */
+/*  MUSEOS */
+#foto_delprado{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/delprado.jpg);
+}
+#foto_thyssen{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/thyssen.jpg);
+}
+#foto_lopedevega{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/lopedevega.jpg);
+}
+#foto_ermitasanantonio{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/ermitasanantonio.jpg);
+}
+#foto_monasteriodescalzas{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/monasteriodescalzas.jpg);
+}
+#foto_monasterioencarnacion{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/monasterioencarnacion.jpg);
+}
+#foto_museoabc{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/museoabc.jpg);
+}
+#foto_museoamerica{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/museoamerica.jpg);
+}
+#foto_museocerralbo{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/museocerralbo.jpg);
+}
+#foto_museosanisidro{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/museosanisidro.jpg);
+}
+#foto_museogeominero{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/museogeominero.jpg);
+}
+#foto_museolazaro{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/museolazaro.jpg);
+}
+#foto_museoartepublico{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/museoartepublico.jpg);
+}
+#foto_museoartesdecorativas{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/museoartesdecorativas.jpg);
+}
+#foto_museocienciasnaturales{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/museocienciasnaturales.jpg);
+}
+#foto_museoromanticismo{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/museoromanticismo.jpg);
+}
+#foto_museofabricatapices{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/museofabricatapices.jpg);
+}
+#foto_museosorolla{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/museosorolla.jpg);
+}
+#foto_museotraje{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/museotraje.jpg);
+}
+#foto_realacademiabellasartes{
+	float: left;
+	position: relative;
+	height: 380px;
+	width: 34%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url(images/Museos/realacademiabellasartes.jpg);
+}
+  /*  FIN MUSEOS */
