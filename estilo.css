@@ -253,7 +253,7 @@ a, a:active, a:visited
 	font-size: 13px;
 	font-family: Verdana;
 	width: 95%;
-	height:150px;
+	height:130px;
 	overflow-y:scroll;
 	background: rgba(35,31,33,0.2);
 	border-radius:5px;
@@ -264,15 +264,21 @@ a, a:active, a:visited
 	float:left;
 	position:relative;
 	clear: both;
-	font-size: 13px;
+	width: 96%;
+	height:150px;
+	font-size: 12px;
 	font-family: Verdana;
+	
+	text-align: justify;
 }
 #texto_3{
 	float:left;
 	position:relative;
 	clear: both;
-	font-size: 16px;
+	width: 96%;
+	font-size: 14px;
 	font-family: Verdana;
+	text-align: justify;
 }
 #foto_museo{
 	float:left;
